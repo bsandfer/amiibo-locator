@@ -9,7 +9,9 @@
 
     <title>Document</title>
 </head>
-<nav>
+
+<!-- nav-bar  -->
+<!-- <nav>
     <div class="nav-wrapper">
       <a href="#!" class="brand-logo">Logo</a>
       <ul class="right hide-on-med-and-down">
@@ -18,20 +20,23 @@
         <li><a href="mobile.html"><i class="material-icons">more_vert</i></a></li>
       </ul>
     </div>
-  </nav>
+  </nav> -->
 <body>
+    <br>
+    <!-- Header  -->
     <div class="container">
-        <div class="row">
-            <div class="col"></div>
-            <div class="col" id="heading">
+        <div id="amiiboBackground" class="row z-depth-4" style="background-image: url(./images/amiiboWallpaper.jpg)">
+            <div class="col m3"></div>
+            <div class="col m6" id="heading">
                 <header>
-                    <h1>Amiibo Locator</h1>
-                    <h4>about...</h4>
+                    <h1 class="topText">Amiibo Locator</h1>
+                    <h4 class="topText">about...</h4>
                 </header>
             </div>
-            <div class="col"></div>
+            <div class="col m3"></div>
         </div>
 
+        <!-- Carousel  -->
         <div class="row">
            
                 <div class="carousel">
@@ -45,12 +50,46 @@
         </div>
 
         <div class="row">
-            <div class="col">
-                <h4>Choose a game to see available Amiibo<h4>
+            <div class="col m12">
+                <h5 style="text-align: center;">Choose a game to see available Amiibo<h5>
             </div>
         </div>
+
+        <!-- bottom section -->
+        <div class="row">
+            <!-- text area  -->
+            <div class="col m4">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa laudantium cupiditate quos fugit aliquam dolorem, fuga temporibus animi debitis quia dicta obcaecati officiis sunt facere architecto repudiandae velit eos quisquam!</p>
+            </div>
+            <!-- game select area  -->
+            <div class="input-field col m4">
+                <select>
+                    <option value="" disabled selected>Choose your option</option>
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                </select>
+                <label>Game Select</label>
+            </div>
+            <!-- text area  -->
+            <div class="col m4">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa laudantium cupiditate quos fugit aliquam dolorem, fuga temporibus animi debitis quia dicta obcaecati officiis sunt facere architecto repudiandae velit eos quisquam!</p>
+            </div>
+        </div>
+        <!-- Amiibo Logo  -->
+        <div class="row">
+            <div class="col m4"></div>
+            <div id="amiiboLogo" class="col m4">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Amiibo_logo.png/800px-Amiibo_logo.png?20210523035922" alt="amiibo logo">
+            </div>
+            <div class="col m4"></div>
+        </div>
+      
     </div>
 
+
+
+<!-- css  -->
     <style>
         body {
             background-color: lightblue;
@@ -63,14 +102,44 @@
         nav {
             background-color: darkgray;
         }
+
+        .topText {
+            text-align: center
+        }
+       
+        img {
+            width: 270px;
+        }
+        
+        h1 {
+            text-shadow: 0px 3px rgb(165, 165, 165);
+        }
+        
+        h4 {
+            text-shadow: 0px 3px rgb(165, 165, 165);
+        }
+
+        p {
+            text-align: center;
+        }
+
+        #amiiboBackground {
+            width: 100%;
+            height: 200px;
+        }
     </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
     <script>
       
         document.addEventListener('DOMContentLoaded', function() {
-            var elems = document.querySelectorAll('.carousel');
-            var instances = M.Carousel.init(elems);
+            var elems = document.querySelectorAll('.carousel')
+            var instances = M.Carousel.init(elems)
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('select')
+            var instances = M.FormSelect.init(elems)
         });
 
     </script>
