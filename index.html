@@ -56,35 +56,31 @@
                 <h4>Choose a game to see available Amiibo<h4>
             </div>
 
-            <!-- Dropdown Trigger -->
-            <a class='dropdown-trigger btn' href='#' data-target='dropdown1'>Drop Me!</a>
-            
-            <!-- Dropdown Structure -->
-            <ul id='dropdown1' class='dropdown-content'>
-                <li><a href="#!">Super Mario</a></li>
-                <li class="divider" tabindex="-1"></li>
-                <li><a href="#!">Mario Sports Superstars</a></li>
-                <li class="divider" tabindex="-1"></li>
-                <li><a href="#!">Yoshi's Woolly World</a></li>
-                <li class="divider" tabindex="-1"></li>
-                <li><a href="#!">The Legend of Zelda</a></li>
-                <li class="divider" tabindex="-1"></li>
-                <li><a href="#!">Animal Crossing</a></li>
-                <li class="divider" tabindex="-1"></li>
-                <li><a href="#!">Star Fox</a></li>
-                <li class="divider" tabindex="-1"></li>
-                <li><a href="#!">Yu-Gi-Oh!</a></li>
-                <li><a href="#!">Final Fantasy</a></li>
-                <li class="divider" tabindex="-1"></li>
-                <li><a href="#!">Kid Icarus</a></li>
-                <li class="divider" tabindex="-1"></li>
-                <li><a href="#!">Splatoon</a></li>
-                <li class="divider" tabindex="-1"></li>
-                <li><a href="#!">Kid Icarus</a></li>
-                <li class="divider" tabindex="-1"></li>
-                <li><a href="#!">Classic Nintendo</a></li>
-                
-            </ul>
+            <!-- select dropdown  -->
+            <div class="input-field col s12">
+                <select>
+                    <option value="" disabled selected>Choose your option</option>
+                    <option value="1">Super Mario</option>
+                    <option value="2">Mario Sports Superstars</option>
+                    <option value="3">Fire Emblem</option>
+                    <option value="4">Yoshi's Woolly World</option>
+                    <option value="5">The Legend of Zelda</option>
+                    <option value="6">Animal Crossing</option>
+                    <option value="7">Star Fox</option>
+                    <option value="8">Yu-Gi-Oh!</option>
+                    <option value="9">Final Fantasy</option>
+                    <option value="10">Kid Icarus</option>
+                    <option value="11">Splatoon</option>
+                    <option value="12">Power Pros</option>
+                    <option value="13">Pokemon</option>
+                    <option value="14">Kirby</option>
+                    <option value="15">Monster Hunter</option>
+                    
+                </select>
+                <label>Select Game Series</label>
+            </div>
+
+
 
         </div>
     </div>
@@ -108,9 +104,10 @@
         });
 
          document.addEventListener('DOMContentLoaded', function () {
-                var elems = document.querySelectorAll('.dropdown-trigger');
-                var instances = M.Dropdown.init(elems);
+                var elems = document.querySelectorAll('select');
+                var instances = M.FormSelect.init(elems);
             });
+
 
     </script>
 
