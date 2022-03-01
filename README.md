@@ -1,3 +1,7 @@
+# group-project
+
+checking - hyewon
+=======
 # AMIIBO LOCATOR
 ```
 The function of this app is to provide the user with a fast method of 
@@ -15,3 +19,4 @@ user to search for amiibos and show availablity at BestBuy.
 5. Build search bar funcionality w/ API
 ```
 ![wireFrame](./wireFrame.png)
+
