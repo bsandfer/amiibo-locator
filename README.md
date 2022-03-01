@@ -1,7 +1,4 @@
 # group-project
-
-checking - hyewon
-=======
 # AMIIBO LOCATOR
 ```
 The function of this app is to provide the user with a fast method of 
