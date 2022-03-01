@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
 
-    <title>Document</title>
+    <title>Amiibo Finder</title>
 </head>
 <nav>
     <div class="nav-wrapper">
-      <a href="#!" class="brand-logo">Logo</a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="sass.html"><i class="material-icons">search</i></a></li>
-        <li><a href="badges.html"><i class="material-icons">view_module</i></a></li>
-        <li><a href="mobile.html"><i class="material-icons">more_vert</i></a></li>
-      </ul>
+        <a href="#!" class="brand-logo">Logo</a>
+        <ul class="right hide-on-med-and-down">
+            <li><a href="sass.html"><i class="material-icons">search</i></a></li>
+            <li><a href="badges.html"><i class="material-icons">view_module</i></a></li>
+            <li><a href="mobile.html"><i class="material-icons">more_vert</i></a></li>
+        </ul>
     </div>
-  </nav>
+</nav>
+
 <body>
     <div class="container">
         <div class="row">
@@ -33,15 +36,20 @@
         </div>
 
         <div class="row">
-           
-                <div class="carousel">
-                    <a class="carousel-item" href="#one!"><img src="https://assets.nintendo.com/image/upload/c_pad,f_auto,q_auto,w_245/E3/2021/Products/znwxBYWj7Bd3/samus-and-emmi-amiibo-2-pack-set-metroid-series/emmi"></a>
-                    <a class="carousel-item" href="#two!"><img src="https://assets.nintendo.com/image/upload/c_pad,f_auto,q_auto,w_245/E3/2021/Products/znwxBYWj7Bd3/samus-and-emmi-amiibo-2-pack-set-metroid-series/samus"></a>
-                    <a class="carousel-item" href="#three!"><img src="https://assets.nintendo.com/image/upload/c_pad,f_auto,q_auto,w_245/ncom/en_US/amiibo/zelda-and-loftwing-amiibo-the-legend-of-zelda-series/zelda_and_loftwing_amiibo_transparent"></a>
-                    <a class="carousel-item" href="#four!"><img src="https://assets.nintendo.com/image/upload/c_pad,f_auto,q_auto,w_245/ncom/en_US/amiibo/banjo-and-kazooie-amiibo-super-smash-bros-series/figure"></a>
-                    <a class="carousel-item" href="#five!"><img src="https://assets.nintendo.com/image/upload/c_pad,f_auto,q_auto,w_245/ncom/en_US/amiibo/cat-peach-amiibo-super-mario-series/figure"></a>
-                  </div>
-            
+
+            <div class="carousel">
+                <a class="carousel-item" href="#one!"><img
+                        src="https://assets.nintendo.com/image/upload/c_pad,f_auto,q_auto,w_245/E3/2021/Products/znwxBYWj7Bd3/samus-and-emmi-amiibo-2-pack-set-metroid-series/emmi"></a>
+                <a class="carousel-item" href="#two!"><img
+                        src="https://assets.nintendo.com/image/upload/c_pad,f_auto,q_auto,w_245/E3/2021/Products/znwxBYWj7Bd3/samus-and-emmi-amiibo-2-pack-set-metroid-series/samus"></a>
+                <a class="carousel-item" href="#three!"><img
+                        src="https://assets.nintendo.com/image/upload/c_pad,f_auto,q_auto,w_245/ncom/en_US/amiibo/zelda-and-loftwing-amiibo-the-legend-of-zelda-series/zelda_and_loftwing_amiibo_transparent"></a>
+                <a class="carousel-item" href="#four!"><img
+                        src="https://assets.nintendo.com/image/upload/c_pad,f_auto,q_auto,w_245/ncom/en_US/amiibo/banjo-and-kazooie-amiibo-super-smash-bros-series/figure"></a>
+                <a class="carousel-item" href="#five!"><img
+                        src="https://assets.nintendo.com/image/upload/c_pad,f_auto,q_auto,w_245/ncom/en_US/amiibo/cat-peach-amiibo-super-mario-series/figure"></a>
+            </div>
+
         </div>
 
         <div class="row">
@@ -51,26 +59,9 @@
         </div>
     </div>
 
-    <style>
-        body {
-            background-color: lightblue;
-        }
-
-        #heading {
-            color: white
-            text-shadow: 5px 4px 11px rgb(152, 149, 123), 0 2px 5px rgb(152, 149, 123);
-        }
-        
-    </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
-    <script>
-      
-        document.addEventListener('DOMContentLoaded', function() {
-            var elems = document.querySelectorAll('.carousel');
-            var instances = M.Carousel.init(elems);
-        });
-
-    </script>
+    <script src="./script.js"></script>
 </body>
+
 </html>

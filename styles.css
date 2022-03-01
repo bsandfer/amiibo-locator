@@ -1,0 +1,7 @@
+body {
+  background-color: lightblue;
+}
+
+#heading {
+  color: white text-shadow: 5px 4px 11px rgb(152, 149, 123), 0 2px 5px rgb(152, 149, 123);
+}
