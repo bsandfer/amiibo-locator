@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,14 +12,15 @@
 </head>
 <nav>
     <div class="nav-wrapper">
-      <a href="#!" class="brand-logo">Logo</a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="sass.html"><i class="material-icons">search</i></a></li>
-        <li><a href="badges.html"><i class="material-icons">view_module</i></a></li>
-        <li><a href="mobile.html"><i class="material-icons">more_vert</i></a></li>
-      </ul>
+        <a href="#!" class="brand-logo">Logo</a>
+        <ul class="right hide-on-med-and-down">
+            <li><a href="sass.html"><i class="material-icons">search</i></a></li>
+            <li><a href="badges.html"><i class="material-icons">view_module</i></a></li>
+            <li><a href="mobile.html"><i class="material-icons">more_vert</i></a></li>
+        </ul>
     </div>
-  </nav>
+</nav>
+
 <body>
     <div class="container">
         <div class="row">
@@ -33,21 +35,57 @@
         </div>
 
         <div class="row">
-           
-                <div class="carousel">
-                    <a class="carousel-item" href="#one!"><img src="https://assets.nintendo.com/image/upload/c_pad,f_auto,q_auto,w_245/E3/2021/Products/znwxBYWj7Bd3/samus-and-emmi-amiibo-2-pack-set-metroid-series/emmi"></a>
-                    <a class="carousel-item" href="#two!"><img src="https://assets.nintendo.com/image/upload/c_pad,f_auto,q_auto,w_245/E3/2021/Products/znwxBYWj7Bd3/samus-and-emmi-amiibo-2-pack-set-metroid-series/samus"></a>
-                    <a class="carousel-item" href="#three!"><img src="https://assets.nintendo.com/image/upload/c_pad,f_auto,q_auto,w_245/ncom/en_US/amiibo/zelda-and-loftwing-amiibo-the-legend-of-zelda-series/zelda_and_loftwing_amiibo_transparent"></a>
-                    <a class="carousel-item" href="#four!"><img src="https://assets.nintendo.com/image/upload/c_pad,f_auto,q_auto,w_245/ncom/en_US/amiibo/banjo-and-kazooie-amiibo-super-smash-bros-series/figure"></a>
-                    <a class="carousel-item" href="#five!"><img src="https://assets.nintendo.com/image/upload/c_pad,f_auto,q_auto,w_245/ncom/en_US/amiibo/cat-peach-amiibo-super-mario-series/figure"></a>
-                  </div>
-            
+
+            <div class="carousel">
+                <a class="carousel-item" href="#one!"><img
+                        src="https://assets.nintendo.com/image/upload/c_pad,f_auto,q_auto,w_245/E3/2021/Products/znwxBYWj7Bd3/samus-and-emmi-amiibo-2-pack-set-metroid-series/emmi"></a>
+                <a class="carousel-item" href="#two!"><img
+                        src="https://assets.nintendo.com/image/upload/c_pad,f_auto,q_auto,w_245/E3/2021/Products/znwxBYWj7Bd3/samus-and-emmi-amiibo-2-pack-set-metroid-series/samus"></a>
+                <a class="carousel-item" href="#three!"><img
+                        src="https://assets.nintendo.com/image/upload/c_pad,f_auto,q_auto,w_245/ncom/en_US/amiibo/zelda-and-loftwing-amiibo-the-legend-of-zelda-series/zelda_and_loftwing_amiibo_transparent"></a>
+                <a class="carousel-item" href="#four!"><img
+                        src="https://assets.nintendo.com/image/upload/c_pad,f_auto,q_auto,w_245/ncom/en_US/amiibo/banjo-and-kazooie-amiibo-super-smash-bros-series/figure"></a>
+                <a class="carousel-item" href="#five!"><img
+                        src="https://assets.nintendo.com/image/upload/c_pad,f_auto,q_auto,w_245/ncom/en_US/amiibo/cat-peach-amiibo-super-mario-series/figure"></a>
+            </div>
+
         </div>
 
         <div class="row">
             <div class="col">
                 <h4>Choose a game to see available Amiibo<h4>
             </div>
+
+            <!-- Dropdown Trigger -->
+            <a class='dropdown-trigger btn' href='#' data-target='dropdown1'>Drop Me!</a>
+            
+            <!-- Dropdown Structure -->
+            <ul id='dropdown1' class='dropdown-content'>
+                <li><a href="#!">Super Mario</a></li>
+                <li class="divider" tabindex="-1"></li>
+                <li><a href="#!">Mario Sports Superstars</a></li>
+                <li class="divider" tabindex="-1"></li>
+                <li><a href="#!">Yoshi's Woolly World</a></li>
+                <li class="divider" tabindex="-1"></li>
+                <li><a href="#!">The Legend of Zelda</a></li>
+                <li class="divider" tabindex="-1"></li>
+                <li><a href="#!">Animal Crossing</a></li>
+                <li class="divider" tabindex="-1"></li>
+                <li><a href="#!">Star Fox</a></li>
+                <li class="divider" tabindex="-1"></li>
+                <li><a href="#!">Yu-Gi-Oh!</a></li>
+                <li><a href="#!">Final Fantasy</a></li>
+                <li class="divider" tabindex="-1"></li>
+                <li><a href="#!">Kid Icarus</a></li>
+                <li class="divider" tabindex="-1"></li>
+                <li><a href="#!">Splatoon</a></li>
+                <li class="divider" tabindex="-1"></li>
+                <li><a href="#!">Kid Icarus</a></li>
+                <li class="divider" tabindex="-1"></li>
+                <li><a href="#!">Classic Nintendo</a></li>
+                
+            </ul>
+
         </div>
     </div>
 
@@ -57,22 +95,26 @@
         }
 
         #heading {
-            color: white
-            text-shadow: 5px 4px 11px rgb(152, 149, 123), 0 2px 5px rgb(152, 149, 123);
+            color: white text-shadow: 5px 4px 11px rgb(152, 149, 123), 0 2px 5px rgb(152, 149, 123);
         }
-        
     </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
     <script>
-      
-        document.addEventListener('DOMContentLoaded', function() {
+
+        document.addEventListener('DOMContentLoaded', function () {
             var elems = document.querySelectorAll('.carousel');
             var instances = M.Carousel.init(elems);
         });
+
+         document.addEventListener('DOMContentLoaded', function () {
+                var elems = document.querySelectorAll('.dropdown-trigger');
+                var instances = M.Dropdown.init(elems);
+            });
 
     </script>
 
     <script src="./hpscript.js"></script>
 </body>
+
 </html>
