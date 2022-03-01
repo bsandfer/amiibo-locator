@@ -12,4 +12,4 @@ The function of this app is to provide the user with a fast method of shopping f
 4. Build Carousel funcionality
 5. Build search bar funcionality w/ API
 ```
-<img src= "./wireFrame.png" width= "300">
+![wireFrame](./wireFrame.png)
