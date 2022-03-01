@@ -1,6 +1,8 @@
 # AMIIBO LOCATOR
 ```
-The function of this app is to provide the user with a fast method of shopping for amiibo's based on their favorite games. It would allow the user to search for amiibos and show availablity at BestBuy.
+The function of this app is to provide the user with a fast method of 
+shopping for amiibo's based on their favorite games. It would allow the 
+user to search for amiibos and show availablity at BestBuy.
 
 ```
 ## ALGORITHM 
