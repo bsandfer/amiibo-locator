@@ -31,8 +31,8 @@
         <div id="amiiboBackground" class="row z-depth-4" style="background-image: url(./images/amiiboWallpaper.jpg)">
             <div class="col m3"></div>
             <div class="col m6" id="heading">
-                    <h1 class="header topText">Amiibo Locator</h1>
-                    <h4 class="header topText">about...</h4>
+                    <h1 class="header">Amiibo Locator</h1>
+                    <h4 class="header">about...</h4>
             </div>
             <div class="col m3"></div>
         </div>
@@ -106,10 +106,6 @@
             background-color: rgb(109, 140, 150);
         }
 
-        .topText {
-            text-align: center
-        }
-       
         img {
             width: 270px;
         }
@@ -129,6 +125,7 @@
         #amiiboBackground {
             width: 100%;
             height: 200px;
+            padding: none;
         }
 
         #joycon {
@@ -136,6 +133,11 @@
             padding-left: 10px;
             height: 55px;
             width: 55px;
+        }
+
+        #heading {
+            text-align: center;
+            justify-content: baseline;
         }
     </style>
 <!-- JSS -->
