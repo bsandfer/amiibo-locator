@@ -108,9 +108,16 @@
          document.addEventListener('DOMContentLoaded', function () {
                 let elems = document.querySelectorAll('select');
                 let instances = M.FormSelect.init(elems);
+                
+                let someVar = document.getElementById('selectDropdown').M_FormSelect.input.value;
+                if (someVar == "Pokemon") {
+                    console.log(yay);
+                }
+                
                
             });
-    
+        
+        
     
 
     </script>
