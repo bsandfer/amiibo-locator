@@ -56,6 +56,7 @@
                 <h4>Choose a game to see available Amiibo<h4>
             </div>
 
+            <!-- for brendan -->
             <!-- select dropdown  -->
             <div class="input-field col s12">
                 <select id="selectDropdown">
@@ -75,7 +76,6 @@
                     <option value="Pokemon">Pokemon</option>
                     <option value="Kirby">Kirby</option>
                     <option value="Monster Hunter">Monster Hunter</option>
-                    
                 </select>
                 <label>Select Game Series</label>
             </div>
@@ -103,15 +103,15 @@
             var instances = M.Carousel.init(elems);
         });
 
+
+        // for brendan
          document.addEventListener('DOMContentLoaded', function () {
-                var elems = document.querySelectorAll('select');
-                var instances = M.FormSelect.init(elems);
+                let elems = document.querySelectorAll('select');
+                let instances = M.FormSelect.init(elems);
+               
             });
     
-        console.log(document.getElementById('selectDropdown').value)
-        if (document.getElementById('selectDropdown').value=='Pokemon') {
-        console.log('hiya');
-    }
+    
 
     </script>
 
