@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='shortcut icon' type='image/x-icon' href='./images/favicon.ico'/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
@@ -11,7 +12,7 @@
 </head>
 
 <!-- nav-bar  -->
-<!-- <nav>
+<nav>
     <div class="nav-wrapper">
       <a href="#!" class="brand-logo">Logo</a>
       <ul class="right hide-on-med-and-down">
@@ -20,7 +21,8 @@
         <li><a href="mobile.html"><i class="material-icons">more_vert</i></a></li>
       </ul>
     </div>
-  </nav> -->
+  </nav>
+
 <body>
     <br>
     <!-- Header  -->
@@ -28,10 +30,8 @@
         <div id="amiiboBackground" class="row z-depth-4" style="background-image: url(./images/amiiboWallpaper.jpg)">
             <div class="col m3"></div>
             <div class="col m6" id="heading">
-                <header>
-                    <h1 class="topText">Amiibo Locator</h1>
-                    <h4 class="topText">about...</h4>
-                </header>
+                    <h1 class="header topText">Amiibo Locator</h1>
+                    <h4 class="header topText">about...</h4>
             </div>
             <div class="col m3"></div>
         </div>
@@ -49,13 +49,13 @@
             
         </div>
 
+        <!-- bottom section -->
         <div class="row">
             <div class="col m12">
                 <h5 style="text-align: center;">Choose a game to see available Amiibo<h5>
             </div>
         </div>
 
-        <!-- bottom section -->
         <div class="row">
             <!-- text area  -->
             <div class="col m4">
@@ -95,12 +95,14 @@
             background-color: lightblue;
         }
 
-        #heading {
-            color: white
+        .header {
+            color: white;
+            line-height: 100%;
+            line-height: var(#amiiboBackground);
         }
         
         nav {
-            background-color: darkgray;
+            background-color: rgb(109, 140, 150);
         }
 
         .topText {
@@ -128,9 +130,8 @@
             height: 200px;
         }
     </style>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
-    <script>
+<!-- JSS -->
+<script>
       
         document.addEventListener('DOMContentLoaded', function() {
             var elems = document.querySelectorAll('.carousel')
@@ -142,6 +143,8 @@
             var instances = M.FormSelect.init(elems)
         });
 
-    </script>
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
 </html>
