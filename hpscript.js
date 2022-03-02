@@ -1,5 +1,5 @@
 //let gameName = document.getElementById('selectDropdown').value;
-let amiiboUrl = 'https://amiiboapi.com/api/amiibo/?gameseries=' + 'Fire Emblem';
+let amiiboUrl = 'https://amiiboapi.com/api/amiibo/?gameseries=' + 'Pokemon';
 //?gameseries=Chibi Robo
 fetch(amiiboUrl)
   .then(function (response) {
@@ -11,7 +11,7 @@ fetch(amiiboUrl)
     console.log(data.amiibo[0])
     for (let i = 0; i < data.amiibo.length; i++) {
 
-      //amiiboSeries character image  type
+      //amiiboSeries character image  type release {au:, eu: jp na}
       
       let list = document.createElement('li');
       let divOne = document.createElement('div');
@@ -20,12 +20,22 @@ fetch(amiiboUrl)
       divOne.classList.add('collapsible-header');
       divOne.textContent = data.amiibo[i].character;
 
-      //body of collapsible, presenting image, type, amiibo series info
+      //body of collapsible, presenting image, type, amiibo series info 
       divTwo.classList.add('collapsible-body');
-      //adding image
+      
       let img = document.createElement("img");
       img.src = data.amiibo[i].image;
       divTwo.appendChild(img);
+
+      let info = document.createElement('ul');
+      let info_El1 = document.createElement('li');
+      info_El1.textContent = data.amiibo[i].amiiboSeries + "\n " + data.amiibo[i].type + "\n" + data.amiibo[i].release;
+      let info_El2 = document.createElement('li');
+      info_El2.textContent = data.amiibo[i].type;
+      info.append(info_El1);
+      info.append(info_El2);
+
+      divTwo.appendChild(info);
 
       //appending the header and bodies onto the main collapsible
       list.appendChild(divOne);
@@ -36,15 +46,6 @@ fetch(amiiboUrl)
     }
   });
 
-let list = document.createElement('li');
-let divOne = document.createElement('div');
-let divTwo = document.createElement('div');
-divOne.classList.add('collapsible-header');
-divOne.textContent = 'ladfjkla';
-divTwo.classList.add('collapsible-body');
-divTwo.textContent = ';kladjfl;ak';
-list.appendChild(divOne);
-list.appendChild(divTwo);
-document.getElementById('collapsible').append(list);
+
 
 
