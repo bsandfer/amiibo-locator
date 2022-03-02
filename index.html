@@ -5,35 +5,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/staticFavicon.ico" type="image/x-icon">
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-    <title>Document</title>
+    <title>Amiibo Locator</title>
 </head>
+
+<!-- nav-bar  -->
 <nav>
     <div class="nav-wrapper">
-        <a href="#!" class="brand-logo">Logo</a>
-        <ul class="right hide-on-med-and-down">
-            <li><a href="sass.html"><i class="material-icons">search</i></a></li>
-            <li><a href="badges.html"><i class="material-icons">view_module</i></a></li>
-            <li><a href="mobile.html"><i class="material-icons">more_vert</i></a></li>
-        </ul>
+      <img src="./images/joyCon.png" id="joycon">
+      <ul class="right hide-on-med-and-down">
+        <li><a href="sass.html"><i class="material-icons">search</i></a></li>
+        <li><a href="badges.html"><i class="material-icons">view_module</i></a></li>
+        <li><a href="mobile.html"><i class="material-icons">more_vert</i></a></li>
+      </ul>
     </div>
-</nav>
+  </nav>
 
 <body>
+    <br>
+    <!-- Header  -->
     <div class="container">
-        <div class="row">
-            <div class="col"></div>
-            <div class="col" id="heading">
-                <header>
-                    <h1>Amiibo Locator</h1>
-                    <h4>about...</h4>
-                </header>
+        <div id="amiiboBackground" class="row" style="background-image:linear-gradient(rgba(255,255,255,0.3),rgba(255,255,255,0.3)), url(./images/amiiboWallpaper.jpg)">
+            <div class="col m3"></div>
+            <div class="col m6" id="heading">
+                    <h1 class="header">Amiibo Locator</h1>
+                    <h4 class="header">about...</h4>
             </div>
-            <div class="col"></div>
+            <div class="col m3"></div>
         </div>
 
+        <!-- Carousel  -->
         <div class="row">
 
             <div class="carousel">
@@ -51,92 +56,148 @@
 
         </div>
 
-        <div class="row">
-            <div class="col">
-                <h4>Choose a game to see available Amiibo<h4>
+        <!-- bottom section -->
+        <div id="bottomBackground" class="row z-depth-4" style="background-image: url(./images/nintendo-run.jpg);">
+            <div class="row">
+                <div class="col m12">
+                    <h5 style="text-align: center;">Choose a game to see available Amiibo<h5>
+                </div>
             </div>
 
-            <!-- for brendan -->
-            <!-- select dropdown  -->
-            <div class="input-field col s12">
-                <select id="selectDropdown">
-                    <option value="" disabled selected>Choose your option</option>
-                    <option value="Super Mario">Super Mario</option>
-                    <option value="Mario Sports Superstars">Mario Sports Superstars</option>
-                    <option value="Fire Emblem">Fire Emblem</option>
-                    <option value="Yoshi's Woolly World">Yoshi's Woolly World</option>
-                    <option value="The Legend of Zelda">The Legend of Zelda</option>
-                    <option value="Animal Crossing">Animal Crossing</option>
-                    <option value="Star Fox">Star Fox</option>
-                    <option value="Yu-Gi-Oh!">Yu-Gi-Oh!</option>
-                    <option value="Final Fantasy">Final Fantasy</option>
-                    <option value="Kid Icarus">Kid Icarus</option>
-                    <option value="Splatoon">Splatoon</option>
-                    <option value="Power Pros">Power Pros</option>
-                    <option value="Pokemon">Pokemon</option>
-                    <option value="Kirby">Kirby</option>
-                    <option value="Monster Hunter">Monster Hunter</option>
-                </select>
-                <label>Select Game Series</label>
-
-                <ul class="collapsible">
-                    <li>
-                        <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
-                        <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-                    </li>
-                    <li>
-                        <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
-                        <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-                    </li>
-                </ul>
-
+            <div id="bottomRow" class="row">
+                <!-- text area  -->
+                <div class="col m4">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa laudantium cupiditate quos fugit aliquam dolorem!</p>
+                </div>
+                <!-- game select area  -->
+                <div class="input-field col s12 m4 z-depth-4">
+                    <select id="selectDropdown">
+                        <option value="" disabled selected>Select Game Series</option>
+                        <option value="Super Mario">Super Mario</option>
+                        <option value="Mario Sports Superstars">Mario Sports Superstars</option>
+                        <option value="Fire Emblem">Fire Emblem</option>
+                        <option value="Yoshi's Woolly World">Yoshi's Woolly World</option>
+                        <option value="The Legend of Zelda">The Legend of Zelda</option>
+                        <option value="Animal Crossing">Animal Crossing</option>
+                        <option value="Star Fox">Star Fox</option>
+                        <option value="Yu-Gi-Oh!">Yu-Gi-Oh!</option>
+                        <option value="Final Fantasy">Final Fantasy</option>
+                        <option value="Kid Icarus">Kid Icarus</option>
+                        <option value="Splatoon">Splatoon</option>
+                        <option value="Power Pros">Power Pros</option>
+                        <option value="Pokemon">Pokemon</option>
+                        <option value="Kirby">Kirby</option>
+                        <option value="Monster Hunter">Monster Hunter</option>
+                    </select>
+                    <!-- <label>Select Game Series</label> -->
+                </div>
+                <!-- text area  -->
+                <div class="col m4">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa laudantium cupiditate quos fugit aliquam dolorem, fuga temporibus animi debitis quia dicta obcaecati officiis sunt facere architecto repudiandae velit eos quisquam!</p>
+                </div>
             </div>
-
-
         </div>
-
-
+        <!-- Amiibo Logo  -->
+        <div class="row">
+            <div class="col m4"></div>
+            <div class="col m4">
+                <img id="amiiboLogo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Amiibo_logo.png/800px-Amiibo_logo.png?20210523035922" alt="amiibo logo">
+            </div>
+            <div class="col m4"></div>
+        </div>
+      
     </div>
 
+
+
+<!-- css  -->
     <style>
         body {
-            background-color: lightblue;
+            background-color: rgb(167, 227, 255);
+        }
+
+        .header {
+            color: white;
+            line-height: 100%;
+            line-height: var(#amiiboBackground);
+        }
+        
+        nav {
+            background-color: rgb(109, 140, 150);
+        }
+
+        img {
+            width: 270px;
+        }
+        
+        h1 {
+            text-shadow: 1px 5px rgb(99, 99, 99);
+            margin: 0;
+            padding-top: 3vh;
+        }
+        
+        h4 {
+            text-shadow: 1px 3px rgb(99, 99, 99);
+            margin: 0;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        #amiiboBackground {
+            box-sizing: border-box;
+            width: 100%;
+            height: 200px;
+            padding: none;
+            border-radius: 50px;
+        }
+
+        #joycon {
+            padding-top: 10px;
+            padding-left: 10px;
+            height: 55px;
+            width: 55px;
         }
 
         #heading {
-            color: white text-shadow: 5px 4px 11px rgb(152, 149, 123), 0 2px 5px rgb(152, 149, 123);
+            text-align: center;
+            justify-content: baseline;
+        }
+
+        #bottomBackground {
+            box-sizing: border-box;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: bottom;
+            border-radius: 50px;
+            /* width: var(bottomRow) */
+        }
+
+        #amiiboLogo {
+            width: 100%;
+            background-size: cover;
+            background-position: center;
         }
     </style>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
-    <script>
-
-        document.addEventListener('DOMContentLoaded', function () {
-            var elems = document.querySelectorAll('.carousel');
-            var instances = M.Carousel.init(elems);
+<!-- JSS -->
+<script>
+      
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.carousel')
+            var instances = M.Carousel.init(elems)
         });
 
-
-        // for brendan
-        document.addEventListener('DOMContentLoaded', function () {
-            let elems = document.querySelectorAll('select');
-            let instances = M.FormSelect.init(elems);
-
-
-
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('select')
+            var instances = M.FormSelect.init(elems)
         });
 
-        // collapsible
-        document.addEventListener('DOMContentLoaded', function () {
-            var elems = document.querySelectorAll('.collapsible');
-            var instances = M.Collapsible.init(elems);
-        });
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
 
-
-    </script>
-
-    <script src="./hpscript.js"></script>
 </body>
 
 </html>
