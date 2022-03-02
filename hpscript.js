@@ -7,8 +7,9 @@ fetch(amiiboUrl)
   })
   .then(function (data) {
     //looping over the fetch response and inserting the URL of your repos into a list
-    console.log(data)
-    console.log(data.amiibo[0])
+    console.log(data);
+    console.log(data.amiibo[0]);
+    console.log(data.amiibo[0].release);
     for (let i = 0; i < data.amiibo.length; i++) {
 
       //amiiboSeries character image  type release {au:, eu: jp na}
@@ -27,13 +28,19 @@ fetch(amiiboUrl)
       img.src = data.amiibo[i].image;
       divTwo.appendChild(img);
 
-      let info = document.createElement('ul');
+      let info = document.createElement('ol');
       let info_El1 = document.createElement('li');
-      info_El1.textContent = data.amiibo[i].amiiboSeries + "\n " + data.amiibo[i].type + "\n" + data.amiibo[i].release;
+      info_El1.textContent = "Amiibo Series: " + data.amiibo[i].amiiboSeries
       let info_El2 = document.createElement('li');
-      info_El2.textContent = data.amiibo[i].type;
+      info_El2.textContent = "Type: " + data.amiibo[i].type;
+      
+      let info_El3 = document.createElement('li');
+      let releaseObj = JSON.stringify(data.amiibo[i].release);
+      info_El3.textContent = "Release: " + releaseObj;
+
       info.append(info_El1);
       info.append(info_El2);
+      info.append(info_El3);
 
       divTwo.appendChild(info);
 
