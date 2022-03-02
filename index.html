@@ -28,7 +28,7 @@
     <br>
     <!-- Header  -->
     <div class="container">
-        <div id="amiiboBackground" class="row z-depth-4" style="background-image:linear-gradient(rgba(255,255,255,0.3),rgba(255,255,255,0.3)), url(./images/amiiboWallpaper.jpg)">
+        <div id="amiiboBackground" class="row" style="background-image:linear-gradient(rgba(255,255,255,0.3),rgba(255,255,255,0.3)), url(./images/amiiboWallpaper.jpg)">
             <div class="col m3"></div>
             <div class="col m6" id="heading">
                     <h1 class="header">Amiibo Locator</h1>
@@ -51,7 +51,7 @@
         </div>
 
         <!-- bottom section -->
-        <div id="bottomBackground" class="row" style="background-image: url(./images/nintendo-run.jpg);">
+        <div id="bottomBackground" class="row z-depth-4" style="background-image: url(./images/nintendo-run.jpg);">
             <div class="row">
                 <div class="col m12">
                     <h5 style="text-align: center;">Choose a game to see available Amiibo<h5>
@@ -61,7 +61,7 @@
             <div id="bottomRow" class="row">
                 <!-- text area  -->
                 <div class="col m4">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa laudantium cupiditate quos fugit aliquam dolorem, fuga temporibus animi debitis quia dicta obcaecati officiis sunt facere architecto repudiandae velit eos quisquam!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa laudantium cupiditate quos fugit aliquam dolorem!</p>
                 </div>
                 <!-- game select area  -->
                 <div class="input-field col s12 m4 z-depth-4">
@@ -94,8 +94,8 @@
         <!-- Amiibo Logo  -->
         <div class="row">
             <div class="col m4"></div>
-            <div id="amiiboLogo" class="col m4">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Amiibo_logo.png/800px-Amiibo_logo.png?20210523035922" alt="amiibo logo">
+            <div class="col m4">
+                <img id="amiiboLogo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Amiibo_logo.png/800px-Amiibo_logo.png?20210523035922" alt="amiibo logo">
             </div>
             <div class="col m4"></div>
         </div>
@@ -164,6 +164,12 @@
             background-position: bottom;
             border-radius: 50px;
             /* width: var(bottomRow) */
+        }
+
+        #amiiboLogo {
+            width: 100%;
+            background-size: cover;
+            background-position: center;
         }
     </style>
 <!-- JSS -->
