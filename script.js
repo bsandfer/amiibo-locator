@@ -1,18 +1,14 @@
-let selectedCharacter = 
+//let selectedCharacter = 
 
 // var amiiboImg = 'https://amiiboapi.com/api/amiibo/?image=zelda'
 
 
 
 
-
-  document.addEventListener('DOMContentLoaded', function () {
-    var elems = document.querySelectorAll('.carousel');
-    var instances = M.Carousel.init(elems);
-    var elems = document.querySelectorAll('.carousel')
-    var instances = M.Carousel.init(elems)
-  });
-
+document.addEventListener('DOMContentLoaded', function () {
+  var elems = document.querySelectorAll('.carousel')
+  var instances = M.Carousel.init(elems)
+});
 document.addEventListener('DOMContentLoaded', function () {
   var elems = document.querySelectorAll('select')
   var instances = M.FormSelect.init(elems)
