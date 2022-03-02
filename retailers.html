@@ -35,30 +35,33 @@
             </div>
             <div class="col m3"></div>
         </div>
-
+    </div>
+    
+    <div class="container cardContainer">
         <div class="row" id="retailCards">
-            <div class="col m3">
+            <div class="cardColumn col m4">
                 <div class="card-panel blue">
-                    <a href="https://www.bestbuy.com/site/searchpage.jsp?st=amiibo&_dyncharset=UTF-8&_dynSessConf=&id=pcat17071&type=page&sc=Global&cp=1&nrp=&sp=&qp=&list=n&af=true&iht=y&usc=All+Categories&ks=960&keys=keys"><img id="bestBuyLogo" src="./images/BestBuy_Logo_2020-190616.png" alt=""></a>
+                    <a href="https://www.bestbuy.com/site/searchpage.jsp?st=amiibo&_dyncharset=UTF-8&_dynSessConf=&id=pcat17071&type=page&sc=Global&cp=1&nrp=&sp=&qp=&list=n&af=true&iht=y&usc=All+Categories&ks=960&keys=keys" target="_blank" rel="noopener noreferrer"><img id="bestBuyLogo" src="./images/BestBuy_Logo_2020-190616.png" alt=""></a>
                 </div>
             </div>
-            <div class="col m3">
-                <div class="card-panel white"></div>
+            <div class="cardColumn col m4">
+                <div class="card-panel yellow">
+                    <a href="https://www.amazon.com/s?k=amiibo&crid=FJ0F6IZ191PB&sprefix=amiibo%2Caps%2C130&ref=nb_sb_noss_1" target="_blank" rel="noopener noreferrer">
+                    <img id="amazonLogo" src="./images/available_at_amazon_US_EN_logo_stacked_RGB_WHITE.png" alt=""></a>
+                </div>
             </div>
-            <div class="col m3">
-                <div class="card-panel white"></div>
-            </div>
-            <div class="col m3">
-                <div class="card-panel white"></div>
+            <div class="cardColumn col m4">
+                <div class="card-panel white">
+                    <a href="https://www.gamestop.com/consoles-hardware/nintendo-switch/nintendo-switch-amiibo?isSearchParam=true" target="_blank" rel="noopener noreferrer">
+                    <img id="gsLogo" src="./images/GS-logo.png" alt=""></a>
+                </div>
             </div>
         </div>
-
-
-        
     </div>
 
-   
-        <!-- Amiibo Logo  -->
+
+    <!-- Amiibo Logo  -->
+    <div class="container">   
         <div class="row">
             <div class="col m4"></div>
             <div class="col m4">
@@ -111,6 +114,14 @@
             width: 55px;
         }
 
+        .cardContainer {
+            width: 80%;
+        }
+
+      
+
+       
+
         #amiiboLogo {
             width: 100%;
             background-size: cover;
@@ -122,6 +133,20 @@
             background-size: cover;
             background-position: center;
             padding: 0%;
+        }
+
+        #amazonLogo {
+            width: 100%;
+            background-size: cover;
+            background-position: center;
+            padding: 0%;
+        }
+
+        #gsLogo {
+            width: 100%;
+            background-size: cover;
+            background-position: center;
+            padding: 0%;            
         }
         
         #amiiboBackground {
