@@ -78,11 +78,24 @@
                     <option value="Monster Hunter">Monster Hunter</option>
                 </select>
                 <label>Select Game Series</label>
+
+                <ul class="collapsible">
+                    <li>
+                        <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
+                        <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
+                        <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                    </li>
+                </ul>
+
             </div>
 
 
-
         </div>
+
+
     </div>
 
     <style>
@@ -105,20 +118,21 @@
 
 
         // for brendan
-         document.addEventListener('DOMContentLoaded', function () {
-                let elems = document.querySelectorAll('select');
-                let instances = M.FormSelect.init(elems);
-                
-                let someVar = document.getElementById('selectDropdown').M_FormSelect.input.value;
-                if (someVar == "Pokemon") {
-                    console.log(yay);
-                }
-                
-               
-            });
-        
-        
-    
+        document.addEventListener('DOMContentLoaded', function () {
+            let elems = document.querySelectorAll('select');
+            let instances = M.FormSelect.init(elems);
+
+
+
+        });
+
+        // collapsible
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.collapsible');
+            var instances = M.Collapsible.init(elems);
+        });
+
+
 
     </script>
 
