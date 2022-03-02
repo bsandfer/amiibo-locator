@@ -58,23 +58,23 @@
 
             <!-- select dropdown  -->
             <div class="input-field col s12">
-                <select>
+                <select id="selectDropdown">
                     <option value="" disabled selected>Choose your option</option>
-                    <option value="1">Super Mario</option>
-                    <option value="2">Mario Sports Superstars</option>
-                    <option value="3">Fire Emblem</option>
-                    <option value="4">Yoshi's Woolly World</option>
-                    <option value="5">The Legend of Zelda</option>
-                    <option value="6">Animal Crossing</option>
-                    <option value="7">Star Fox</option>
-                    <option value="8">Yu-Gi-Oh!</option>
-                    <option value="9">Final Fantasy</option>
-                    <option value="10">Kid Icarus</option>
-                    <option value="11">Splatoon</option>
-                    <option value="12">Power Pros</option>
-                    <option value="13">Pokemon</option>
-                    <option value="14">Kirby</option>
-                    <option value="15">Monster Hunter</option>
+                    <option value="Super Mario">Super Mario</option>
+                    <option value="Mario Sports Superstars">Mario Sports Superstars</option>
+                    <option value="Fire Emblem">Fire Emblem</option>
+                    <option value="Yoshi's Woolly World">Yoshi's Woolly World</option>
+                    <option value="The Legend of Zelda">The Legend of Zelda</option>
+                    <option value="Animal Crossing">Animal Crossing</option>
+                    <option value="Star Fox">Star Fox</option>
+                    <option value="Yu-Gi-Oh!">Yu-Gi-Oh!</option>
+                    <option value="Final Fantasy">Final Fantasy</option>
+                    <option value="Kid Icarus">Kid Icarus</option>
+                    <option value="Splatoon">Splatoon</option>
+                    <option value="Power Pros">Power Pros</option>
+                    <option value="Pokemon">Pokemon</option>
+                    <option value="Kirby">Kirby</option>
+                    <option value="Monster Hunter">Monster Hunter</option>
                     
                 </select>
                 <label>Select Game Series</label>
@@ -107,7 +107,11 @@
                 var elems = document.querySelectorAll('select');
                 var instances = M.FormSelect.init(elems);
             });
-
+    
+        console.log(document.getElementById('selectDropdown').value)
+        if (document.getElementById('selectDropdown').value=='Pokemon') {
+        console.log('hiya');
+    }
 
     </script>
 
