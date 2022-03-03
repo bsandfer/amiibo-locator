@@ -1,6 +1,8 @@
-//let gameName = document.getElementById('selectDropdown').value;
-let amiiboUrl = 'https://amiiboapi.com/api/amiibo/?gameseries=' + 'Pokemon';
+let gameLocal = localStorage.getItem('game');
+let amiiboUrl = 'https://amiiboapi.com/api/amiibo/?gameseries=' + gameLocal;
 //?gameseries=Chibi Robo
+
+
 fetch(amiiboUrl)
   .then(function (response) {
     return response.json();

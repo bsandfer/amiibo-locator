@@ -8,7 +8,7 @@
     <link rel="shortcut icon" href="./images/staticFavicon.ico" type="image/x-icon">
     <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    
+
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <title>Amiibo Locator</title>
@@ -23,16 +23,16 @@
                 <ion-icon class="menu-icon" name="menu-outline"></ion-icon>
             </a>
         </span>
-    
+
         <ul class="navbar-nav">
             <ul class="right hide-on-med-and-down">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Find other Retailers</a></li>
-            <li><a href="contact-us.html">Contact Us</a></li>
-        </ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Find other Retailers</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+            </ul>
     </nav>
-    
+
     <div id="side-menu" class="side-nav">
         <a href="#" class="btn-close" onclick="closeSideMenu()">&times;</a>
         <a href="#">Home</a>
@@ -40,16 +40,17 @@
         <a href="#">Find other Retailers</a>
         <a href="./contact-us.html">Contact us</a>
     </div>
-    
+
 
     <br>
     <!-- Header  -->
     <div class="container">
-        <div id="amiiboBackground" class="row" style="background-image:linear-gradient(rgba(255,255,255,0.3),rgba(255,255,255,0.3)), url(./images/amiiboWallpaper.jpg)">
+        <div id="amiiboBackground" class="row"
+            style="background-image:linear-gradient(rgba(255,255,255,0.3),rgba(255,255,255,0.3)), url(./images/amiiboWallpaper.jpg)">
             <div class="col m3"></div>
             <div class="col m6" id="heading">
-                    <h1 class="header">Amiibo Locator</h1>
-                    <h4 class="header">about...</h4>
+                <h1 class="header">Amiibo Locator</h1>
+                <h4 class="header">about...</h4>
             </div>
             <div class="col m3"></div>
         </div>
@@ -83,7 +84,8 @@
             <div id="bottomRow" class="row">
                 <!-- text area  -->
                 <div class="col m4">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa laudantium cupiditate quos fugit aliquam dolorem!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa laudantium cupiditate quos fugit
+                        aliquam dolorem!</p>
                 </div>
                 <!-- game select area  -->
                 <div class="col s12 m4 z-depth-4">
@@ -109,7 +111,9 @@
                 </div>
                 <!-- text area  -->
                 <div class="col m4">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa laudantium cupiditate quos fugit aliquam dolorem, fuga temporibus animi debitis quia dicta obcaecati officiis sunt facere architecto repudiandae velit eos quisquam!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa laudantium cupiditate quos fugit
+                        aliquam dolorem, fuga temporibus animi debitis quia dicta obcaecati officiis sunt facere
+                        architecto repudiandae velit eos quisquam!</p>
                 </div>
             </div>
         </div>
@@ -117,16 +121,18 @@
         <div class="row">
             <div class="col m4"></div>
             <div class="col m4">
-                <img id="amiiboLogo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Amiibo_logo.png/800px-Amiibo_logo.png?20210523035922" alt="amiibo logo">
+                <img id="amiiboLogo"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Amiibo_logo.png/800px-Amiibo_logo.png?20210523035922"
+                    alt="amiibo logo">
             </div>
             <div class="col m4"></div>
         </div>
-      
+
     </div>
 
 
 
-<!-- css  -->
+    <!-- css  -->
     <style>
         body {
             background-color: rgb(167, 227, 255);
@@ -137,7 +143,7 @@
             line-height: 100%;
             line-height: var(#amiiboBackground);
         }
-        
+
         nav {
             background-color: rgb(109, 140, 150);
         }
@@ -145,13 +151,13 @@
         img {
             width: 270px;
         }
-        
+
         h1 {
             text-shadow: 1px 5px rgb(99, 99, 99);
             margin: 0;
             padding-top: 3vh;
         }
-        
+
         h4 {
             text-shadow: 1px 3px rgb(99, 99, 99);
             margin: 0;
@@ -203,14 +209,14 @@
         }
 
         .navbar a {
-        float: left;
-        display: block;
-        color: #f2f2f2;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 17px;
-        transition: 0.3s;
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            transition: 0.3s;
         }
 
         .navbar ul {
@@ -266,23 +272,24 @@
         }
 
         .open-button {
-        background-color: #555;
-        color: white;
-        padding: 16px 20px;
-        border: none;
-        cursor: pointer;
-        opacity: 0.8;
-        position: fixed;
-        bottom: 23px;
-        right: 28px;
-        width: 280px;
+            background-color: #555;
+            color: white;
+            padding: 16px 20px;
+            border: none;
+            cursor: pointer;
+            opacity: 0.8;
+            position: fixed;
+            bottom: 23px;
+            right: 28px;
+            width: 280px;
         }
-
     </style>
+   
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./script.js"></script>
+   
 
-<script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-<script src="./script.js"></script>
 </body>
 
 </html>
