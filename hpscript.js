@@ -28,7 +28,7 @@ fetch(amiiboUrl)
       img.src = data.amiibo[i].image;
       divTwo.appendChild(img);
 
-      let info = document.createElement('ol');
+      let info = document.createElement('ul');
 
       let info_El0 = document.createElement('li');
       info_El0.textContent = "Game Series: " + data.amiibo[i].gameSeries;
