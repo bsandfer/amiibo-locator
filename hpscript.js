@@ -13,7 +13,7 @@ fetch(amiiboUrl)
     for (let i = 0; i < data.amiibo.length; i++) {
 
       //amiiboSeries character image  type release {au:, eu: jp na}
-      
+
       let list = document.createElement('li');
       let divOne = document.createElement('div');
       let divTwo = document.createElement('div');
@@ -23,21 +23,27 @@ fetch(amiiboUrl)
 
       //body of collapsible, presenting image, type, amiibo series info 
       divTwo.classList.add('collapsible-body');
-      
+
       let img = document.createElement("img");
       img.src = data.amiibo[i].image;
       divTwo.appendChild(img);
 
       let info = document.createElement('ol');
+
+      let info_El0 = document.createElement('li');
+      info_El0.textContent = "Game Series: " + data.amiibo[i].gameSeries;
+
       let info_El1 = document.createElement('li');
       info_El1.textContent = "Amiibo Series: " + data.amiibo[i].amiiboSeries
+
       let info_El2 = document.createElement('li');
       info_El2.textContent = "Type: " + data.amiibo[i].type;
-      
+
       let info_El3 = document.createElement('li');
       let releaseObj = JSON.stringify(data.amiibo[i].release);
       info_El3.textContent = "Release: " + releaseObj;
 
+      info.append(info_El0);
       info.append(info_El1);
       info.append(info_El2);
       info.append(info_El3);
@@ -49,7 +55,7 @@ fetch(amiiboUrl)
       list.appendChild(divTwo);
       document.getElementById('collapsible').append(list);
 
-      
+
     }
   });
 
