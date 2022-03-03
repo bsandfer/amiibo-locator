@@ -48,11 +48,3 @@ fetch(amiiboUrl)
       document.getElementById('side-menu').style.width = '0';
       document.getElementById('main').style.marginLeft = '0';
   }
-  // contact me form//
-  function openForm() {
-          document.getElementById("myForm").style.display = "block";
-      }
-
-      function closeForm() {
-          document.getElementById("myForm").style.display = "none";
-      }
