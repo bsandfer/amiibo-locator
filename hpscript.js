@@ -27,9 +27,9 @@ fetch(amiiboUrl)
 
       let img = document.createElement("img");
       img.src = data.amiibo[i].image;
-      divTwo.classList.add('imgClass');
-      divTwo.appendChild(img);
-      
+      img.classList.add('imgClass');
+      divOne.appendChild(img);
+
 
       let info = document.createElement('ul');
 
@@ -52,9 +52,9 @@ fetch(amiiboUrl)
       info_El3na.textContent = "North America: " + data.amiibo[i].release.na;
       info_El3eu.textContent = "Europe: " + data.amiibo[i].release.eu;
       info_El3jp.textContent = "Japan: " + data.amiibo[i].release.jp;
-      info_El3au.textContent = "Australia: " + data.amiibo[i].release.au 
-     
-      
+      info_El3au.textContent = "Australia: " + data.amiibo[i].release.au
+
+
 
       info.append(info_El0);
       info.append(info_El1);
