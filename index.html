@@ -41,19 +41,6 @@
         <div class="mdc-button__ripple"></div>
         <span class="mdc-button__label">Button</span>
     </button> -->
-    <div class="form-popup" id="myForm">
-        <form action="mailto:info@shizuka@amiibolocator.com" method="post" class="form-container">
-            <h1>Email Us</h1>
-            <label>Your Name</label>
-            <input type="text" name="yourName" value="">
-            
-            <label for="email"><b>Email</b></label>
-            <input type="text" placeholder="Enter Email" name="yourEmail">
-    
-            <button type="submit" class="btn">Submit</button>
-            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-        </form>
-    </div>
     <div class="container">
         <div class="row">
             <div class="col"></div>
@@ -209,60 +196,6 @@ body {
   width: 280px;
 }
 
-/* The popup form */
-.form-popup {
-  display: none;
-  position: fixed;
-  bottom: 0;
-  right: 15px;
-  border: 3px solid #f1f1f1;
-  z-index: 9;
-}
-
-/* form container */
-.form-container {
-  max-width: 300px;
-  padding: 10px;
-  background-color: white;
-}
-
-/* input
-.form-container input[type=text], .form-container input[type=password] {
-  width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  border: none;
-  background: #f1f1f1;
-}
-
-/* inputs trigger this  */
-/* .form-container input[type=text]:focus, .form-container input[type=password]:focus {
-  background-color: #ddd;
-  outline: none;
-}  */
-
-/* submit button */
-.form-container .btn {
-  background-color: #04AA6D;
-  color: white;
-  padding: 16px 20px;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  margin-bottom:10px;
-  opacity: 0.8;
-}
-
-/* cancel button */
-.form-container .cancel {
-  background-color: red;
-}
-
-/* hover effects */
-.form-container .btn:hover, .open-button:hover {
-  opacity: 1;
-}
-
     </style>
     
 
@@ -292,14 +225,6 @@ body {
         document.getElementById('side-menu').style.width = '0';
         document.getElementById('main').style.marginLeft = '0';
     }
-    // contact me form//
-    function openForm() {
-            document.getElementById("myForm").style.display = "block";
-        }
-
-        function closeForm() {
-            document.getElementById("myForm").style.display = "none";
-        }
 
     </script>
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
