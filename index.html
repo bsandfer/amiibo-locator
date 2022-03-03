@@ -5,34 +5,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <title>Document</title>
 </head>
 
 <body>
-<!-- Dropdown Structure -->
-<ul id="dropdown1" class="dropdown-content">
-    <li><a href="#!">one</a></li>
-    <li><a href="#!">two</a></li>
-    <li class="divider"></li>
-    <li><a href="#!">three</a></li>
-</ul>
-<nav>
-    <div class="nav-wrapper">
-        <a href="#!" class="brand-logo">Logo</a>
-        <ul class="right hide-on-med-and-down">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="index.html">About Us</a></li>
-            <li><a href="https://nintendonews.com/">Latest Nintendo News</a></li>
-            <li><a href="retail.html">Find other Retailers</a></li>
-            <!-- Dropdown Trigger -->
-            <li><a class="dropdown-trigger" href="#!" data-trigger="dropdown1">Useful Links<i
-                        class="material-icons right">arrow_drop_down</i></a></li>
-        </ul>
-    </div>
+<nav class="navbar">
+    <span class="open-slide">
+        <a href="#" onclick="openSideMenu()">
+            <ion-icon class="menu-icon" name="menu-outline"></ion-icon>
+        </a>
+    </span>
+
+    <ul class="navbar-nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Find other Retailers</a></li>
+        <li><a href="#">Contact Us</a></li>
+    </ul>
 </nav>
+
+<div id="side-menu" class="side-nav">
+    <a href="#" class="btn-close" onclick="closeSideMenu()">&times;</a>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Find other Retailers</a>
+    <a href="#">Contact us</a>
+</div>
+    <!-- <button class="mdc-button foo-button">
+        <div class="mdc-button__ripple"></div>
+        <span class="mdc-button__label">Button</span>
+    </button> -->
     <div class="container">
         <div class="row">
             <div class="col"></div>
@@ -97,15 +104,86 @@
     </div>
 
     <style>
-        body {
+body {
             background-color: lightblue;
         }
 
         #heading {
             color: white text-shadow: 5px 4px 11px rgb(152, 149, 123), 0 2px 5px rgb(152, 149, 123);
+            overflow-x: hidden;
         }
+        
+.navbar {
+    background-color: #81c784;
+    overflow: hidden;
+    height: 63px;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    transition: 0.3s;
+}
+
+.navbar ul {
+    margin: 8px 0 0 0;
+    list-style: none;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    border-radius: 40px;
+    color: #000;
+    transition: 0.3s;
+}
+
+.menu-icon {
+    font-size: 2rem;
+}
+
+.side-nav {
+    height: 100%;
+    width: 0;
+    margin-top: 71px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #f4f4f4;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 1s;
+    box-shadow: 2px 2px 15px grey;
+}
+
+.side-nav a {
+    padding: 10px 10px 10px 30px;
+    text-decoration: none;
+    font-size: 22px;
+    color: #555;
+    display: block;
+    transition: 0.3s;
+}
+
+.side-nav a:hover {
+    color: #333;
+}
+
+.side-nav .btn-close {
+    position: absolute;
+    top: 0;
+    right: 22px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
     </style>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    
 
     <script>
 
@@ -121,10 +199,21 @@
                 let instances = M.FormSelect.init(elems);
                
             });
-    
-        
+
+        // mdc.ripple.MDCRipple.attachTo(document.querySelector('.foo-button'));<script>
+
+    function openSideMenu() {
+        document.getElementById('side-menu').style.width = '250px';
+        document.getElementById('main').style.marginLeft = '250px';
+    }
+
+    function closeSideMenu() {
+        document.getElementById('side-menu').style.width = '0';
+        document.getElementById('main').style.marginLeft = '0';
+    }
 
     </script>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="./hpscript.js"></script>
     <script src ="navbarscript.js"></script>
