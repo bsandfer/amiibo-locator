@@ -15,8 +15,9 @@ fetch(amiiboUrl)
       //amiiboSeries character image  type release {au:, eu: jp na}
 
       let list = document.createElement('li');
-      let divOne = document.createElement('div');
-      let divTwo = document.createElement('div');
+      let divOne = document.createElement('div'); //for the collapsible header
+      let divTwo = document.createElement('div'); //for the collapsible body
+
       //header of the collapsible, presenting character name of amiibo
       divOne.classList.add('collapsible-header');
       divOne.textContent = data.amiibo[i].character;
@@ -26,27 +27,43 @@ fetch(amiiboUrl)
 
       let img = document.createElement("img");
       img.src = data.amiibo[i].image;
+      divTwo.classList.add('imgClass');
       divTwo.appendChild(img);
+      
 
       let info = document.createElement('ul');
 
       let info_El0 = document.createElement('li');
-      info_El0.textContent = "Game Series: " + data.amiibo[i].gameSeries;
+      info_El0.textContent = "GAME SERIES: " + data.amiibo[i].gameSeries;
 
       let info_El1 = document.createElement('li');
-      info_El1.textContent = "Amiibo Series: " + data.amiibo[i].amiiboSeries
+      info_El1.textContent = "AMIIBO SERIES: " + data.amiibo[i].amiiboSeries
 
       let info_El2 = document.createElement('li');
-      info_El2.textContent = "Type: " + data.amiibo[i].type;
+      info_El2.textContent = "TYPE: " + data.amiibo[i].type;
 
       let info_El3 = document.createElement('li');
-      let releaseObj = JSON.stringify(data.amiibo[i].release);
-      info_El3.textContent = "Release: " + releaseObj;
+      info_El3.textContent = "RELEASE: "
+      //for each of the release continents
+      let info_El3na = document.createElement('li');
+      let info_El3eu = document.createElement('li');
+      let info_El3jp = document.createElement('li');
+      let info_El3au = document.createElement('li');
+      info_El3na.textContent = "North America: " + data.amiibo[i].release.na;
+      info_El3eu.textContent = "Europe: " + data.amiibo[i].release.eu;
+      info_El3jp.textContent = "Japan: " + data.amiibo[i].release.jp;
+      info_El3au.textContent = "Australia: " + data.amiibo[i].release.au 
+     
+      
 
       info.append(info_El0);
       info.append(info_El1);
       info.append(info_El2);
       info.append(info_El3);
+      info.append(info_El3na);
+      info.append(info_El3eu);
+      info.append(info_El3jp);
+      info.append(info_El3au);
 
       divTwo.appendChild(info);
 
