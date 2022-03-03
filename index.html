@@ -7,36 +7,54 @@
     <link rel="shortcut icon" href="./images/staticFavicon.ico" type="image/x-icon">
     <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <title>Amiibo Locator</title>
 </head>
 
 <!-- nav-bar  -->
-<!-- Dropdown Structure -->
-<ul id="dropdown1" class="dropdown-content">
-    <li><a href="#!">one</a></li>
-    <li><a href="#!">two</a></li>
-    <li class="divider"></li>
-    <li><a href="#!">three</a></li>
-</ul>
-<nav>
-    <div class="nav-wrapper">
-        <a href="#!" class="brand-logo">Logo</a>
-        <ul class="right hide-on-med-and-down">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="index.html">About Us</a></li>
-            <li><a href="https://nintendonews.com/">Latest Nintendo News</a></li>
-            <li><a href="retailers.html">Find other Retailers</a></li>
-            <!-- Dropdown Trigger -->
-            <li><a class="dropdown-trigger" href="#!" data-trigger="dropdown1">Useful Links<i
-                        class="material-icons right">arrow_drop_down</i></a></li>
-        </ul>
-    </div>
-</nav>
-
 
 <body>
+    <nav class="navbar">
+        <span class="open-slide">
+            <a href="#" onclick="openSideMenu()">
+                <ion-icon class="menu-icon" name="menu-outline"></ion-icon>
+            </a>
+        </span>
+    
+        <ul class="navbar-nav">
+            <ul class="right hide-on-med-and-down">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Find other Retailers</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    
+    <div id="side-menu" class="side-nav">
+        <a href="#" class="btn-close" onclick="closeSideMenu()">&times;</a>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Find other Retailers</a>
+        <a href="#">Contact us</a>
+    </div>
+    
+    <div class="form-popup" id="myForm">
+        <form action="mailto:info@shizuka@amiibolocator.com" method="post" class="form-container">
+            <h1>Email Us</h1>
+            <label>Your Name</label>
+            <input type="text" name="yourName" value="">
+            
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="yourEmail">
+    
+            <button type="submit" class="btn">Submit</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+    </div>
+
     <br>
     <!-- Header  -->
     <div class="container">

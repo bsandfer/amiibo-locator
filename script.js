@@ -33,3 +33,26 @@ fetch(amiiboUrl)
     //looping over the fetch response and inserting the URL of your repos into a list
     //console.log(data)
   })
+
+
+  
+
+      // mdc.ripple.MDCRipple.attachTo(document.querySelector('.foo-button'));<script>
+    //side menu//
+    function openSideMenu() {
+      document.getElementById('side-menu').style.width = '250px';
+      document.getElementById('main').style.marginLeft = '250px';
+  }
+
+  function closeSideMenu() {
+      document.getElementById('side-menu').style.width = '0';
+      document.getElementById('main').style.marginLeft = '0';
+  }
+  // contact me form//
+  function openForm() {
+          document.getElementById("myForm").style.display = "block";
+      }
+
+      function closeForm() {
+          document.getElementById("myForm").style.display = "none";
+      }
