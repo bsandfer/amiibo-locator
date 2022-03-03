@@ -12,49 +12,31 @@
     <title>Amiibo Locator</title>
 </head>
 
-<!-- nav-bar  -->
-<nav class="navbar">
-    <span class="open-slide">
-        <a href="#" onclick="openSideMenu()">
-            <ion-icon class="menu-icon" name="menu-outline"></ion-icon>
-        </a>
-    </span>
-
-    <ul class="navbar-nav">
-        <ul class="right hide-on-med-and-down">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Find other Retailers</a></li>
-        <li><a href="contact-us.html">Contact Us</a></li>
-    </ul>
-</nav>
-
-<div id="side-menu" class="side-nav">
-    <a href="#" class="btn-close" onclick="closeSideMenu()">&times;</a>
-    <a href="#">Home</a>
-    <a href="#">About</a>
-    <a href="#">Find other Retailers</a>
-    <a href="#">Contact us</a>
-</div>
-    <!-- <button class="mdc-button foo-button">
-        <div class="mdc-button__ripple"></div>
-        <span class="mdc-button__label">Button</span>
-    </button> -->
-    <div class="form-popup" id="myForm">
-        <form action="mailto:info@shizuka@amiibolocator.com" method="post" class="form-container">
-            <h1>Email Us</h1>
-            <label>Your Name</label>
-            <input type="text" name="yourName" value="">
-            
-            <label for="email"><b>Email</b></label>
-            <input type="text" placeholder="Enter Email" name="yourEmail">
-    
-            <button type="submit" class="btn">Submit</button>
-            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-        </form>
-    </div>
 
 <body>
+    <nav class="navbar">
+        <span class="open-slide">
+            <a href="#" onclick="openSideMenu()">
+                <ion-icon class="menu-icon" name="menu-outline"></ion-icon>
+            </a>
+        </span>
+    
+        <ul class="navbar-nav">
+            <ul class="right hide-on-med-and-down">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Find other Retailers</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    
+    <div id="side-menu" class="side-nav">
+        <a href="#" class="btn-close" onclick="closeSideMenu()">&times;</a>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Find other Retailers</a>
+        <a href="./contact-us.html">Contact us</a>
+    </div>
     <br>
     <div class="container">
         <div id="amiiboBackground" class="row" style="background-image:linear-gradient(rgba(255,255,255,0.3),rgba(255,255,255,0.3)), url(./images/amiiboWallpaper.jpg)">
@@ -191,9 +173,93 @@
             text-align: center;
             justify-content: baseline;
         }
+
+        .navbar {
+            background-color: background-color: rgb(109, 140, 150);
+            overflow: hidden;
+            height: 80px;
+        }
+
+        .navbar a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        transition: 0.3s;
+        }
+
+        .navbar ul {
+            margin: 8px 0 0 0;
+            list-style: none;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            border-radius: 40px;
+            color: #000;
+            transition: 0.3s;
+        }
+
+        .menu-icon {
+            font-size: 2rem;
+        }
+
+        .side-nav {
+            height: 100%;
+            width: 0;
+            margin-top: 71px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #f4f4f4;
+            overflow-x: hidden;
+            padding-top: 60px;
+            transition: 1s;
+            box-shadow: 2px 2px 15px grey;
+        }
+
+        .side-nav a {
+            padding: 10px 10px 10px 30px;
+            text-decoration: none;
+            font-size: 22px;
+            color: #555;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .side-nav a:hover {
+            color: #333;
+        }
+
+        .side-nav .btn-close {
+            position: absolute;
+            top: 0;
+            right: 22px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+        .open-button {
+        background-color: #555;
+        color: white;
+        padding: 16px 20px;
+        border: none;
+        cursor: pointer;
+        opacity: 0.8;
+        position: fixed;
+        bottom: 23px;
+        right: 28px;
+        width: 280px;
+        }
+
     </style>
 
-
+<script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="./script.js"></script>
 </body>
 </html>
