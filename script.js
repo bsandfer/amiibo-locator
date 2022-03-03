@@ -13,11 +13,9 @@ document.addEventListener('DOMContentLoaded', function () {
   var elems = document.querySelectorAll('select')
   var instances = M.FormSelect.init(elems)
 });
-let value = select.options[select.selectedIndex].value
 
 select.addEventListener('change', () => {
   gameNane = select.options[select.selectedIndex].value
-  console.log(select)
   console.log(gameNane)
 })
 
@@ -35,5 +33,3 @@ fetch(amiiboUrl)
     //looping over the fetch response and inserting the URL of your repos into a list
     //console.log(data)
   })
-
-update()
