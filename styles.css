@@ -52,7 +52,7 @@ p {
   color: white;
   line-height: 100%;
   font-size:70px;
-  line-height: var(#amiiboBackground)
+  /* line-height: var(#amiiboBackground) */
 }
   
   
