@@ -1,6 +1,3 @@
-# group-project
-
-#Sharon's branch
 # AMIIBO LOCATOR
 ```
 The function of this app is to provide the user with a fast method of 
