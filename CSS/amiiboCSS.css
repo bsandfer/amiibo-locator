@@ -134,3 +134,30 @@ p {
   right: 28px;
   width: 280px;
 }
+
+/* below are all for the collapsible features */
+#collapsible {
+  text-align: center;
+}
+
+.collapsible-header {
+  background-image: url('https://wallpaperaccess.com/full/2138694.jpg');
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: xx-large;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
+.collapsible-body {
+  background-color: beige;
+  color: grey;
+  font-size: medium;
+}
+
+/* refers to the amiibo images */
+.imgClass {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
