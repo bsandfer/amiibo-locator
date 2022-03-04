@@ -9,7 +9,7 @@ nav {
 .header {
   color: white;
   line-height: 100%;
-  line-height: var(#amiiboBackground);
+  /* line-height: var(#amiiboBackground); */
 }
 
 h1 {
@@ -45,7 +45,7 @@ p {
   background-position: center;
 }
 
-#bestBuyLogo {
+/* #bestBuyLogo {
   width: 100%;
   background-size: cover;
   background-position: center;
@@ -64,7 +64,7 @@ p {
   background-size: cover;
   background-position: center;
   padding: 0%;
-}
+} */
 
 #amiiboBackground {
   box-sizing: border-box;
