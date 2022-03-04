@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/staticFavicon.ico" type="image/x-icon">
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <title>Amiibo Locator</title>
+</head>
+
+
+<body>
+    <nav class="navbar">
+        <span class="open-slide">
+            <a href="#" onclick="openSideMenu()">
+                <ion-icon class="menu-icon" name="menu-outline"></ion-icon>
+            </a>
+        </span>
+    
+        <ul class="navbar-nav">
+            <ul class="right hide-on-med-and-down">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="retailers.html">Find other Retailers</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    
+    <div id="side-menu" class="side-nav">
+        <a href="#" class="btn-close" onclick="closeSideMenu()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="#">About</a>
+        <a href="retailers.html">Find other Retailers</a>
+        <a href="./contact-us.html">Contact us</a>
+    </div>
+    <br>
+    <div class="container">
+        <div id="amiiboBackground" class="row" style="background-image:linear-gradient(rgba(255,255,255,0.3),rgba(255,255,255,0.3)), url(./images/amiiboWallpaper.jpg)">
+            <div class="col m3"></div>
+            <div class="col m6" id="heading">
+                    <h1 class="header">Amiibo Locator</h1>
+                    <h4 class="header">about...</h4>
+            </div>
+            <div class="col m3"></div>
+        </div>
+    </div>
+    
+    <div class="container cardContainer">
+        <div class="row" id="retailCards">
+            <div class="cardColumn col m4">
+                <div class="card-panel blue">
+                    <a href="https://www.bestbuy.com/site/searchpage.jsp?st=amiibo&_dyncharset=UTF-8&_dynSessConf=&id=pcat17071&type=page&sc=Global&cp=1&nrp=&sp=&qp=&list=n&af=true&iht=y&usc=All+Categories&ks=960&keys=keys" target="_blank" rel="noopener noreferrer"><img id="bestBuyLogo" src="./images/BestBuy_Logo_2020-190616.png" alt=""></a>
+                </div>
+            </div>
+            <div class="cardColumn col m4">
+                <div class="card-panel yellow">
+                    <a href="https://www.amazon.com/s?k=amiibo&crid=FJ0F6IZ191PB&sprefix=amiibo%2Caps%2C130&ref=nb_sb_noss_1" target="_blank" rel="noopener noreferrer">
+                    <img id="amazonLogo" src="./images/available_at_amazon_US_EN_logo_stacked_RGB_WHITE.png" alt=""></a>
+                </div>
+            </div>
+            <div class="cardColumn col m4">
+                <div class="card-panel white">
+                    <a href="https://www.gamestop.com/consoles-hardware/nintendo-switch/nintendo-switch-amiibo?isSearchParam=true" target="_blank" rel="noopener noreferrer">
+                    <img id="gsLogo" src="./images/GS-logo.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Amiibo Logo  -->
+    <div class="container">   
+        <div class="row">
+            <div class="col m4"></div>
+            <div class="col m4">
+                <img id="amiiboLogo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Amiibo_logo.png/800px-Amiibo_logo.png?20210523035922" alt="amiibo logo">
+            </div>
+            <div class="col m4"></div>
+        </div>
+      
+    </div>
+
+
+
+<!-- css  -->
+    <style>
+        body {
+            background-color: rgb(167, 227, 255);
+        }
+
+        
+        nav {
+            background-color: rgb(109, 140, 150);
+        }
+
+        .header {
+            color: white;
+            line-height: 100%;
+            line-height: var(#amiiboBackground);
+        }
+        
+        h1 {
+            text-shadow: 1px 5px rgb(99, 99, 99);
+            margin: 0;
+            padding-top: 3vh;
+        }
+        
+        h4 {
+            text-shadow: 1px 3px rgb(99, 99, 99);
+            margin: 0;
+        }
+
+        p {
+            text-align: center;
+        }
+
+
+        #joycon {
+            padding-top: 10px;
+            padding-left: 10px;
+            height: 55px;
+            width: 55px;
+        }
+
+        .cardContainer {
+            width: 80%;
+            height: 45%;
+            position: relative;
+            right: -60px;
+         
+        }
+
+        .card-panel {
+            width: 300px;
+            height:300px;
+            padding: 5rem;
+        }
+
+       
+
+        #amiiboLogo {
+            width: 100%;
+            background-size: cover;
+            background-position: center;
+        }
+
+        #bestBuyLogo {
+            width: 100%;
+            height: 130px;
+            /* background-size: cover; */
+            background-position: center;
+            padding: 0%;
+            object-fit: contain;
+        }
+
+        #amazonLogo {
+            width: 100%;
+            height:130px;
+            /* background-size: cover; */
+            background-position: center;
+            padding: 0%;
+            object-fit: contain;
+        }
+
+        #gsLogo {
+            width: 100%;
+            height: 130px;
+            /* background-size: cover; */
+            background-position: center;
+            padding: 0%;   
+            object-fit: contain;         
+        }
+        
+        #amiiboBackground {
+            box-sizing: border-box;
+            width: 100%;
+            height: 200px;
+            padding: none;
+            border-radius: 50px;
+        }
+
+        #heading {
+            text-align: center;
+            justify-content: baseline;
+        }
+
+        .navbar {
+            background-color: background-color: rgb(109, 140, 150);
+            overflow: hidden;
+            height: 80px;
+        }
+
+        .navbar a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        transition: 0.3s;
+        }
+
+        .navbar ul {
+            margin: 8px 0 0 0;
+            list-style: none;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            border-radius: 40px;
+            color: #000;
+            transition: 0.3s;
+        }
+
+        .menu-icon {
+            font-size: 2rem;
+        }
+
+        .side-nav {
+            height: 100%;
+            width: 0;
+            margin-top: 71px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #f4f4f4;
+            overflow-x: hidden;
+            padding-top: 60px;
+            transition: 1s;
+            box-shadow: 2px 2px 15px grey;
+        }
+
+        .side-nav a {
+            padding: 10px 10px 10px 30px;
+            text-decoration: none;
+            font-size: 22px;
+            color: #555;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .side-nav a:hover {
+            color: #333;
+        }
+
+        .side-nav .btn-close {
+            position: absolute;
+            top: 0;
+            right: 22px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+        .open-button {
+        background-color: #555;
+        color: white;
+        padding: 16px 20px;
+        border: none;
+        cursor: pointer;
+        opacity: 0.8;
+        position: fixed;
+        bottom: 23px;
+        right: 28px;
+        width: 280px;
+        }
+
+    </style>
+
+<script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="./script.js"></script>
+</body>
+</html>
