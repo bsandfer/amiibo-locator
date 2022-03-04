@@ -98,3 +98,15 @@ if (select) {
     }
   })
 }
+
+
+//hyewon's best buy testing
+let bestbuyUrl = 'https://crossorigin.me/https://api.bestbuy.com/v1/products((search=$%7BlocalStorageVar%7D&search=amiibo)&onlineAvailability=true)?apiKey=ehdgHxWGbLXG1Gc4hts4t254&sort=name.asc&show=name,thumbnailImage,regularPrice&format=json'
+
+fetch(bestbuyUrl)
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (data)  {
+    console.log(data)
+  })
