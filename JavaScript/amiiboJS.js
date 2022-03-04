@@ -61,11 +61,18 @@ fetch(amiiboUrl)
       let info_El3eu = document.createElement('li');
       let info_El3jp = document.createElement('li');
       let info_El3au = document.createElement('li');
-      info_El3na.textContent = "North America: " + data.amiibo[i].release.na;
-      info_El3eu.textContent = "Europe: " + data.amiibo[i].release.eu;
-      info_El3jp.textContent = "Japan: " + data.amiibo[i].release.jp;
-      info_El3au.textContent = "Australia: " + data.amiibo[i].release.au
-
+      if (data.amiibo[i].release.na != null) {
+        info_El3na.textContent = "North America: " + data.amiibo[i].release.na;
+      }
+      if (data.amiibo[i].release.eu != null) {
+        info_El3eu.textContent = "Europe: " + data.amiibo[i].release.eu;
+      }
+      if (data.amiibo[i].release.jp != null) {
+        info_El3jp.textContent = "Japan: " + data.amiibo[i].release.jp;
+      }
+      if (data.amiibo[i].release.au != null) {
+        info_El3au.textContent = "Australia: " + data.amiibo[i].release.au
+      }
 
       //appending all the info elements to the main info which is then appended to collapsible body(divTwo)
       info.append(info_El0);
