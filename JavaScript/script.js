@@ -1,21 +1,29 @@
-var amiiboImg = 'https://amiiboapi.com/api/amiibo/?image=zelda';
+/* ===== VARIALBLES ====*/
+let amiiboImg = 'https://amiiboapi.com/api/amiibo/?image=zelda';
 let select = document.getElementById('selectDropdown')
 let gameName = ""
+
+/* =====================*/
+/* == INITIALIIZATION ==*/
+/* =====================*/
 
 document.addEventListener('DOMContentLoaded', function () {
   var elems = document.querySelectorAll('.carousel')
   var instances = M.Carousel.init(elems)
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+  var elems = document.querySelectorAll('.collapsible');
+  var instances = M.Collapsible.init(elems);
+});
+
 document.addEventListener('DOMContentLoaded', function () {
   var elems = document.querySelectorAll('select')
   var instances = M.FormSelect.init(elems)
 });
 
-
+/* =====================*/
 //nathan and hyewon's methods added for game series selection
-let select = document.getElementById('selectDropdown');
-let gameName = "";
-
 
 if (select) {
   select.addEventListener('change', () => {
