@@ -15,4 +15,3 @@ user to search for amiibos and show availablity at BestBuy.
 5. Build search bar funcionality w/ API
 ```
 ![wireFrame](./wireFrame.png)
-
