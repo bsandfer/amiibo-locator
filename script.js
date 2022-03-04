@@ -1,9 +1,6 @@
-//let selectedCharacter = 
-
-// var amiiboImg = 'https://amiiboapi.com/api/amiibo/?image=zelda'
+var amiiboImg = 'https://amiiboapi.com/api/amiibo/?image=zelda';
 let select = document.getElementById('selectDropdown')
 let gameName = ""
-
 
 document.addEventListener('DOMContentLoaded', function () {
   var elems = document.querySelectorAll('.carousel')
@@ -14,29 +11,37 @@ document.addEventListener('DOMContentLoaded', function () {
   var instances = M.FormSelect.init(elems)
 });
 
-select.addEventListener('change', () => {
-  gameName = select.options[select.selectedIndex].value
-  console.log(gameName)
-  amiiboSelect()
-})
 
-const amiiboSelect = () => {
-  if (gameName != "") {
-    let amiiboUrl = 'https://amiiboapi.com/api/amiibo/?gameseries=' + gameName
-    console.log(gameName)
-    fetch(amiiboUrl)
-      .then(function (response) {
-        return response.json();
-      })
-      .then(function (data) {
-        //looping over the fetch response and inserting the URL of your repos into a list
-        console.log(data)
-      });
-  } else {
-    return
-  }
+//nathan and hyewon's methods added for game series selection
+let select = document.getElementById('selectDropdown');
+let gameName = "";
 
+
+if (select) {
+  select.addEventListener('change', () => {
+    gameName = select.options[select.selectedIndex].value;
+    if (gameName != "") {
+      localStorage.setItem('game', gameName);
+      window.location.href = "amiibo.html";
+    }
+    else {
+      return;
+    }
+  })
 }
+
+// mdc.ripple.MDCRipple.attachTo(document.querySelector('.foo-button'));<script>
+//side menu//
+function openSideMenu() {
+  document.getElementById('side-menu').style.width = '250px';
+  document.getElementById('main').style.marginLeft = '250px';
+}
+
+function closeSideMenu() {
+  document.getElementById('side-menu').style.width = '0';
+  document.getElementById('main').style.marginLeft = '0';
+}
+
 
 //amiiboSelect()
 
@@ -97,6 +102,4 @@ const amiiboSelect = () => {
 //   list.appendChild(divOne);
 //   list.appendChild(divTwo);
 //   document.getElementById('collapsible').append(list);
-
-
 // }

@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href="./images/staticFavicon.ico" type="image/x-icon">
     <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css">
 
@@ -15,18 +16,33 @@
 </head>
 
 <!-- nav-bar  -->
-<nav>
-    <div class="nav-wrapper">
-        <img src="./images/joyCon.png" id="joycon">
-        <ul class="right hide-on-med-and-down">
-            <li><a href="sass.html"><i class="material-icons">search</i></a></li>
-            <li><a href="badges.html"><i class="material-icons">view_module</i></a></li>
-            <li><a href="mobile.html"><i class="material-icons">more_vert</i></a></li>
-        </ul>
-    </div>
-</nav>
 
 <body>
+    <nav class="navbar">
+        <span class="open-slide">
+            <a href="#" onclick="openSideMenu()">
+                <ion-icon class="menu-icon" name="menu-outline"></ion-icon>
+            </a>
+        </span>
+
+        <ul class="navbar-nav">
+            <ul class="right hide-on-med-and-down">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Find other Retailers</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+            </ul>
+    </nav>
+
+    <div id="side-menu" class="side-nav">
+        <a href="#" class="btn-close" onclick="closeSideMenu()">&times;</a>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Find other Retailers</a>
+        <a href="./contact-us.html">Contact us</a>
+    </div>
+
+
     <br>
     <!-- Header  -->
     <div class="container">
@@ -35,6 +51,7 @@
             <div class="col m3"></div>
             <div class="col m6" id="heading">
                 <h1 class="header">Amiibo Locator</h1>
+                <h4 class="header">about...</h4>
             </div>
             <div class="col m3"></div>
         </div>
@@ -71,24 +88,33 @@
                     <p>You can search for Amiibo by game! <br>Select a game to view the related Amiibos!</p>
                 </div>
                 <!-- game select area  -->
-                <div class="input-field col s12 m4 z-depth-4">
+                <div class="col s12 m4 z-depth-4">
                     <select id="selectDropdown">
-                        <option value="">Select Game Series</option>
+                        <option value="" disabled selected>Select Game Series</option>
                         <option value="Super Mario">Super Mario</option>
+                        <option value="Mario Sports Superstars">Mario Sports Superstars</option>
                         <option value="Fire Emblem">Fire Emblem</option>
+                        <option value="Yoshi's Woolly World">Yoshi's Woolly World</option>
                         <option value="The Legend of Zelda">The Legend of Zelda</option>
                         <option value="Animal Crossing">Animal Crossing</option>
+                        <option value="Star Fox">Star Fox</option>
+                        <option value="Yu-Gi-Oh!">Yu-Gi-Oh!</option>
+                        <option value="Final Fantasy">Final Fantasy</option>
+                        <option value="Kid Icarus">Kid Icarus</option>
+                        <option value="Splatoon">Splatoon</option>
+                        <option value="Power Pros">Power Pros</option>
                         <option value="Pokemon">Pokemon</option>
                         <option value="Kirby">Kirby</option>
                         <option value="Monster Hunter">Monster Hunter</option>
                     </select>
-                    <!-- <label>Select Game Series</label> -->
+                    <label>Select Game Series</label>
                 </div>
                 <!-- text area  -->
                 <div class="col m4">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa laudantium cupiditate
-                        quos fugit aliquam dolorem, fuga temporibus animi debitis quia dicta obcaecati
-                        officiis sunt facere architecto repudiandae velit eos quisquam!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa laudantium cupiditate quos fugit
+                        aliquam dolorem, fuga temporibus animi debitis quia dicta obcaecati officiis sunt facere
+                        architecto repudiandae velit eos quisquam!</p>
+
                 </div>
             </div>
         </div>
@@ -103,10 +129,11 @@
             <div class="col m4"></div>
         </div>
 
-    </div>
-
+    </div>   
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="./script.js"></script>
+   
 </body>
 
 </html>
