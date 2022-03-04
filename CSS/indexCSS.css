@@ -2,11 +2,58 @@ body {
   background-color: rgb(167, 227, 255);
 }
 
+nav {
+  background-color: rgb(109, 140, 150);
+}
+
 .header {
   color: white;
   line-height: 100%;
   /* line-height: var(#amiiboBackground); */
 }
+
+h1 {
+  text-shadow: 1px 5px rgb(99, 99, 99);
+  margin: 0;
+  padding-top: 3vh;
+}
+
+h4 {
+  text-shadow: 1px 3px rgb(99, 99, 99);
+  margin: 0;
+}
+
+p {
+  text-align: center;
+}
+
+#joycon {
+  padding-top: 10px;
+  padding-left: 10px;
+  height: 55px;
+  width: 55px;
+}
+
+.cardContainer {
+  width: 80%;
+  height: 45%;
+  position: relative;
+  right: -60px;
+}
+
+.card-panel {
+  width: 300px;
+  height: 300px;
+  padding: 5rem;
+}
+
+#amiiboLogo {
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+
 
 #amiiboBackground {
   box-sizing: border-box;
@@ -17,14 +64,21 @@ body {
 }
 
 #heading {
-  color: white;
-  text-shadow: 5px 4px 11px rgb(152, 149, 123), 0 2px 5px rgb(152, 149, 123);
-  overflow-x: hidden;
+  text-align: center;
+  justify-content: baseline;
+}
+
+#bottomBackground {
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  border-radius: 50px;
+  /* width: var(bottomRow) */
 }
 
 .navbar {
   background-color: rgb(109, 140, 150);
-  /* #0e3c4d; */
   overflow: hidden;
   height: 80px;
 }

@@ -9,7 +9,7 @@ nav {
 .header {
   color: white;
   line-height: 100%;
-  line-height: var(#amiiboBackground);
+  /* line-height: var(#amiiboBackground); */
 }
 
 h1 {
