@@ -100,13 +100,19 @@ if (select) {
 }
 
 
-//hyewon's best buy testing
-let bestbuyUrl = 'https://crossorigin.me/https://api.bestbuy.com/v1/products((search=$%7BlocalStorageVar%7D&search=amiibo)&onlineAvailability=true)?apiKey=ehdgHxWGbLXG1Gc4hts4t254&sort=name.asc&show=name,thumbnailImage,regularPrice&format=json'
+//hyewon's  testing
+// let songUrl = 'http://acnhapi.com/v1/hourly/15'
 
-fetch(bestbuyUrl)
-  .then(function (response) {
-    return response.json();
-  })
-  .then(function (data)  {
-    console.log(data)
-  })
+// fetch(songUrl)
+//   .then(function (response) {
+//     return response.json();
+//   })
+//   .then(function (data) {
+//     let div = document.getElementById('test')
+//     div.innerHtml = `<audio controls>
+//       <source src=${data} type="audio/mpeg">
+//         Your browser does not support the audio element.
+//     </audio>`
+//   })
+
+  //
