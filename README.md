@@ -14,4 +14,9 @@ user to search for amiibos and show availablity at BestBuy.
 4. Build Carousel funcionality
 5. Build search bar funcionality w/ API
 ```
+<<<<<<< HEAD
 ![wireFrame](./wireFrame.png)
+=======
+![wireFrame](./images/wireFrame.png)
+
+>>>>>>> 2e96056ae4a6ecbfe7424dac26779694ed7a9026
