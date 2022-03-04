@@ -37,6 +37,7 @@ p {
 .cardContainer {
   width: 80%;
   height: 45%;
+  min-width: 600px;
   /* position: relative;  */
   /* right: -60px; */
 }
