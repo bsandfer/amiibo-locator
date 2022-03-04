@@ -98,3 +98,21 @@ if (select) {
     }
   })
 }
+
+
+//hyewon's  testing
+// let songUrl = 'http://acnhapi.com/v1/hourly/15'
+
+// fetch(songUrl)
+//   .then(function (response) {
+//     return response.json();
+//   })
+//   .then(function (data) {
+//     let div = document.getElementById('test')
+//     div.innerHtml = `<audio controls>
+//       <source src=${data} type="audio/mpeg">
+//         Your browser does not support the audio element.
+//     </audio>`
+//   })
+
+  //
