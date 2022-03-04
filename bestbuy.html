@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./images/staticFavicon.ico" type="image/x-icon">
+  <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="./CSS/retailersCSS.css">
+
+  <title>Amiibo Locator</title>
+</head>
+
+
+<body>
+  <nav class="navbar">
+    <span class="open-slide">
+      <a href="#" onclick="openSideMenu()">
+        <ion-icon class="menu-icon" name="menu-outline"></ion-icon>
+      </a>
+    </span>
+
+    <ul class="navbar-nav">
+      <ul class="right hide-on-med-and-down">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="./retailers.html">Find other Retailers</a></li>
+        <li><a href="./contact-us.html">Contact Us</a></li>
+      </ul>
+  </nav>
+
+  <div id="side-menu" class="side-nav">
+    <a href="#" class="btn-close" onclick="closeSideMenu()">&times;</a>
+    <a href="./index.html">Home</a>
+    <a href="#">About</a>
+    <a href="./retailers.html">Find other Retailers</a>
+    <a href="./contact-us.html">Contact us</a>
+  </div>
+  <br>
+  <div class="container">
+    <div id="amiiboBackground" class="row"
+      style="background-image:linear-gradient(rgba(255,255,255,0.3),rgba(255,255,255,0.3)), url(./images/amiiboWallpaper.jpg)">
+      <div class="col m3"></div>
+      <div class="col m6" id="heading">
+        <h1 class="header">Amiibo Locator</h1>
+        <h4 class="header">about...</h4>
+      </div>
+      <div class="col m3"></div>
+    </div>
+  </div>
+
+
+
+  <!-- Amiibo Logo  -->
+  <div class="container">
+    <div class="row">
+      <div class="col m4"></div>
+      <div class="col m4">
+        <img id="amiiboLogo"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Amiibo_logo.png/800px-Amiibo_logo.png?20210523035922"
+          alt="amiibo logo">
+      </div>
+      <div class="col m4"></div>
+    </div>
+
+  </div>
+
+  <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="./JavaScript/script.js"></script>
+</body>
+
+</html>
