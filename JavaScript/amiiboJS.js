@@ -1,7 +1,20 @@
+/* ===== VARIALBLES ====*/
 let gameLocal = localStorage.getItem('game');
 let amiiboUrl = 'https://amiiboapi.com/api/amiibo/?gameseries=' + gameLocal;
-//?gameseries=Chibi Robo
 
+
+/* =====================*/
+/* == INITIALIIZATION ==*/
+/* =====================*/
+
+document.addEventListener('DOMContentLoaded', function () {
+  var elems = document.querySelectorAll('.collapsible');
+  var instances = M.Collapsible.init(elems);
+});
+
+/* =====================*/
+/* ======= FETCH =======*/
+/* =====================*/
 
 fetch(amiiboUrl)
   .then(function (response) {
@@ -70,11 +83,5 @@ fetch(amiiboUrl)
       list.appendChild(divOne);
       list.appendChild(divTwo);
       document.getElementById('collapsible').append(list);
-
-
     }
   });
-
-
-
-

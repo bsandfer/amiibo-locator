@@ -9,21 +9,10 @@
     <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/amiiboCSS.css">
 
     <title>Amiibo Locator</title>
 </head>
-
-<!-- nav-bar  -->
-<nav>
-    <div class="nav-wrapper">
-        <img src="./images/joyCon.png" id="joycon">
-        <ul class="right hide-on-med-and-down">
-            <li><a href="sass.html"><i class="material-icons">search</i></a></li>
-            <li><a href="badges.html"><i class="material-icons">view_module</i></a></li>
-            <li><a href="mobile.html"><i class="material-icons">more_vert</i></a></li>
-        </ul>
-    </div>
-</nav>
 
 <body>
     <!-- nav-bar  -->
@@ -33,21 +22,20 @@
                 <ion-icon class="menu-icon" name="menu-outline"></ion-icon>
             </a>
         </span>
-    
+
         <ul class="navbar-nav">
             <ul class="right hide-on-med-and-down">
-
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./index.html">About</a></li>
-            <li><a href="./retailers.html">Find other Retailers</a></li>
-            <li><a href="contact-us.html">Contact Us</a></li>
-        </ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="./retailers.html">Find other Retailers</a></li>
+                <li><a href="./contact-us.html">Contact Us</a></li>
+            </ul>
     </nav>
-    
+
     <div id="side-menu" class="side-nav">
         <a href="#" class="btn-close" onclick="closeSideMenu()">&times;</a>
         <a href="./index.html">Home</a>
-        <a href="./index.html">About</a>
+        <a href="#">About</a>
         <a href="./retailers.html">Find other Retailers</a>
         <a href="./contact-us.html">Contact us</a>
     </div>
@@ -68,7 +56,6 @@
             <!-- amiibo collapsible -->
             <ul class="collapsible popout" id="collapsible">
             </ul>
-
         </div>
     </div>
 
@@ -86,112 +73,9 @@
 
     </div>
 
-
-
-    <!-- css  -->
-    <style>
-        body {
-            background-color: rgb(167, 227, 255);
-        }
-
-
-        nav {
-            background-color: rgb(109, 140, 150);
-        }
-
-        .header {
-            color: white;
-            line-height: 100%;
-            line-height: var(#amiiboBackground);
-        }
-
-        h1 {
-            text-shadow: 1px 5px rgb(99, 99, 99);
-            margin: 0;
-            padding-top: 3vh;
-        }
-
-        h4 {
-            text-shadow: 1px 3px rgb(99, 99, 99);
-            margin: 0;
-        }
-
-        p {
-            text-align: center;
-        }
-
-
-        #joycon {
-            padding-top: 10px;
-            padding-left: 10px;
-            height: 55px;
-            width: 55px;
-        }
-
-        #amiiboLogo {
-            width: 100%;
-            background-size: cover;
-            background-position: center;
-        }
-
-        #amiiboBackground {
-            box-sizing: border-box;
-            width: 100%;
-            height: 200px;
-            padding: none;
-            border-radius: 50px;
-        }
-
-        #heading {
-            text-align: center;
-            justify-content: baseline;
-        }
-
-        /* below are all for the collapsible features */
-        #collapsible {
-            text-align: center;
-        }
-
-        .collapsible-header {
-
-            background-image: url('https://wallpaperaccess.com/full/2138694.jpg');
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: xx-large;
-            font-weight: bold;
-            color: white;
-            text-align: center;
-        }
-
-        .collapsible-body {
-            background-color: beige;
-            color: grey;
-            font-size: medium;
-        }
-
-        /* refers to the amiibo images */
-        .imgClass {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-        }
-    </style>
-
-    <!-- JSS -->
-    <script>
-
-        document.addEventListener('DOMContentLoaded', function () {
-            var elems = document.querySelectorAll('.collapsible');
-            var instances = M.Collapsible.init(elems);
-        });
-
-
-    </script>
-
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
-    <script src="./amiiboscript.js"></script>
-   
-
+    <script src="./JavaScript/amiiboJS.js"></script>
 </body>
 
 </html>
