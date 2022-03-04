@@ -9,26 +9,13 @@
     <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="./CSS/amiiboCSS.css">
+    <link rel="stylesheet" href="./CSS/retailersCSS.css">
 
     <title>Amiibo Locator</title>
 </head>
 
-<!-- nav-bar  -->
-<nav>
-    <div class="nav-wrapper">
-        <img src="./images/joyCon.png" id="joycon">
-        <ul class="right hide-on-med-and-down">
-            <li><a href="sass.html"><i class="material-icons">search</i></a></li>
-            <li><a href="badges.html"><i class="material-icons">view_module</i></a></li>
-            <li><a href="mobile.html"><i class="material-icons">more_vert</i></a></li>
-        </ul>
-    </div>
-</nav>
-
 
 <body>
-    <!-- nav-bar  -->
     <nav class="navbar">
         <span class="open-slide">
             <a href="#" onclick="openSideMenu()">
@@ -63,32 +50,53 @@
             </div>
             <div class="col m3"></div>
         </div>
+    </div>
 
-
-        <div class="row">
-            <!-- amiibo collapsible -->
-            <ul class="collapsible popout" id="collapsible">
-            </ul>
+    <div class="container cardContainer">
+        <div class="row" id="retailCards">
+            <div class="cardColumn col m4">
+                <div class="card-panel blue">
+                    <a href="https://www.bestbuy.com/site/searchpage.jsp?st=amiibo&_dyncharset=UTF-8&_dynSessConf=&id=pcat17071&type=page&sc=Global&cp=1&nrp=&sp=&qp=&list=n&af=true&iht=y&usc=All+Categories&ks=960&keys=keys"
+                        target="_blank" rel="noopener noreferrer"><img id="bestBuyLogo"
+                            src="./images/BestBuy_Logo_2020-190616.png" alt=""></a>
+                </div>
+            </div>
+            <div class="cardColumn col m4">
+                <div class="card-panel yellow">
+                    <a href="https://www.amazon.com/s?k=amiibo&crid=FJ0F6IZ191PB&sprefix=amiibo%2Caps%2C130&ref=nb_sb_noss_1"
+                        target="_blank" rel="noopener noreferrer">
+                        <img id="amazonLogo" src="./images/available_at_amazon_US_EN_logo_stacked_RGB_WHITE.png"
+                            alt=""></a>
+                </div>
+            </div>
+            <div class="cardColumn col m4">
+                <div class="card-panel white">
+                    <a href="https://www.gamestop.com/consoles-hardware/nintendo-switch/nintendo-switch-amiibo?isSearchParam=true"
+                        target="_blank" rel="noopener noreferrer">
+                        <img id="gsLogo" src="./images/GS-logo.png" alt=""></a>
+                </div>
+            </div>
         </div>
     </div>
 
 
     <!-- Amiibo Logo  -->
-    <div class="row">
-        <div class="col m4"></div>
-        <div class="col m4">
-            <img id="amiiboLogo"
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Amiibo_logo.png/800px-Amiibo_logo.png?20210523035922"
-                alt="amiibo logo">
+    <div class="container">
+        <div class="row">
+            <div class="col m4"></div>
+            <div class="col m4">
+                <img id="amiiboLogo"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Amiibo_logo.png/800px-Amiibo_logo.png?20210523035922"
+                    alt="amiibo logo">
+            </div>
+            <div class="col m4"></div>
         </div>
-        <div class="col m4"></div>
-    </div>
 
     </div>
 
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="./JavaScript/amiiboJS.js"></script>
+    <script src="./JavaScript/script.js"></script>
 </body>
 
 </html>
