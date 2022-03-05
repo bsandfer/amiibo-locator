@@ -98,3 +98,13 @@ if (select) {
     }
   })
 }
+
+/* =====================*/
+/* ==== SONG PLAYER ====*/
+/* =====================*/
+
+let clicked = document.getElementById('btnClick')
+clicked.addEventListener('click', () => {
+  document.getElementById('songBtn').innerHTML = `<video controls="" autoplay="" name="media"><source src="http://acnhapi.com/v1/hourly/50"  type="audio/mpeg"></video>
+  <a id="btnClick" class="waves-effect waves-light btn"><i class="material-icons left">play_arrow</i>Next Song</a>`
+})
