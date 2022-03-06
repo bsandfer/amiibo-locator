@@ -114,19 +114,19 @@ function randomnumber() {
 }
 
 //function to push randomly generated tracks into an array. Used callback function to generate the random number needed. 
-function getMusic(){
+function getMusic() {
   let arr = [];
-  for(i = 0; i < 73; i++){
+  for (i = 0; i < 73; i++) {
     arr.push(songAPI + randomnumber());
   }
   return arr;
 }
 
 //Allows user to shuffle upon click. Created audio object and utilized parameters and matched them to the arguments generated previously, thus generating a random playlist. Decremented parameter num. Used recursion to play random track when previous one ends. Will recurse until base case reached.
-function playMusic(arr,num){
-  let audio= document.getElementById('btnClick').innerHTML = `SHUFFLE SONG</a><audio id="next" autoplay="true"> <source src="${arr[num]}"></audio>`
-    num--;
-    next.addEventListener("ended", function () {
+function playMusic(arr, num) {
+  let audio = document.getElementById('btnClick').innerHTML = `SHUFFLE SONG</a><audio id="next" autoplay="true"> <source src="${arr[num]}"></audio>`
+  num--;
+  next.addEventListener("ended", function () {
     playMusic(arr, num);
   });
 }
