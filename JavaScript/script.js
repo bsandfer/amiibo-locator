@@ -104,13 +104,16 @@ if (select) {
 /* ==== SONG PLAYER ====*/
 /* =====================*/
 
+//declare variable for music within the acnh API
 let songAPI = "http://acnhapi.com/v1/hourly/"
 
+//function to generate random number
 function randomnumber() {
   rngNum2 = Math.floor(Math.random() * 72) + 1
   return rngNum2
 }
 
+//function to push randomly generated tracks into an array. Used callback function to generate the random number needed. 
 function getMusic(){
   let arr = [];
   for(i = 0; i < 73; i++){
@@ -119,6 +122,7 @@ function getMusic(){
   return arr;
 }
 
+//Allows user to shuffle upon click. Created audio object and utilized parameters and matched them to the arguments generated previously, thus generating a random playlist. Decremented parameter num. Used recursion to play random track when previous one ends. Will recurse until base case reached.
 function playMusic(arr,num){
   let audio= document.getElementById('btnClick').innerHTML = `SHUFFLE SONG</a><audio id="next" autoplay="true"> <source src="${arr[num]}"></audio>`
     num--;
@@ -130,9 +134,5 @@ function playMusic(arr,num){
 document.getElementById('btnClick').addEventListener('click', () => {
 
   playMusic(getMusic(), 72);
-  // next.addEventListener("ended", function () {
-  //   console.log(next.currentTime)
-  //   playMusic(getMusic(),72);
-  // });
 })
 
