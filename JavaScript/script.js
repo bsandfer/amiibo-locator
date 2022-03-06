@@ -98,3 +98,22 @@ if (select) {
     }
   })
 }
+
+
+/* =====================*/
+/* ==== SONG PLAYER ====*/
+/* =====================*/
+
+let clicked = document.getElementById('btnClick')
+function randomnumber() {
+  rngNum2 = Math.floor(Math.random() * 72) + 1
+  return rngNum2
+}
+let songAPI = "http://acnhapi.com/v1/hourly/" + randomnumber()
+let link = `<audio autoplay="true" loop = "true" src="${songAPI}"></audio>
+<p><strong>To change or stop the song, refresh the page!</strong></p>`
+//let link = `<video controls="" autoplay="" name="media"><source src= "${songAPI}" type="audio/mpeg"></video>`
+
+clicked.addEventListener('click', () => {
+  document.getElementById('songBtn').innerHTML = link
+})
