@@ -49,6 +49,11 @@ function closeSideMenu() {
 const openModalButtons = document.querySelectorAll('[data-modal-target]')
 const closeModalButtons = document.querySelectorAll('[data-close-button]')
 const overlay = document.getElementById('overlay')
+const aboutUs = document.getElementById('abtUs')
+
+aboutUs.addEventListener('click', ()=>{
+  openModal()
+})
 
 // openModalButtons.forEach(button => {
 //   button.addEventListener('click', () => {
@@ -98,3 +103,40 @@ if (select) {
     }
   })
 }
+
+
+/* =====================*/
+/* ==== SONG PLAYER ====*/
+/* =====================*/
+
+//declare variable for music within the acnh API
+let songAPI = "http://acnhapi.com/v1/hourly/"
+
+//function to generate random number
+function randomnumber() {
+  rngNum2 = Math.floor(Math.random() * 72) + 1
+  return rngNum2
+}
+
+//function to push randomly generated tracks into an array. Used callback function to generate the random number needed. 
+function getMusic() {
+  let arr = [];
+  for (i = 0; i < 73; i++) {
+    arr.push(songAPI + randomnumber());
+  }
+  return arr;
+}
+
+//Allows user to shuffle upon click. Created audio object and utilized parameters and matched them to the arguments generated previously, thus generating a random playlist. Decremented parameter num. Used recursion to play random track when previous one ends. Will recurse until base case reached.
+function playMusic(arr, num) {
+  let audio = document.getElementById('btnClick').innerHTML = `SHUFFLE SONG</a><audio id="next" autoplay="true"> <source src="${arr[num]}"></audio>`
+  num--;
+  next.addEventListener("ended", function () {
+    playMusic(arr, num);
+  });
+}
+
+document.getElementById('btnClick').addEventListener('click', () => {
+
+  playMusic(getMusic(), 72);
+})

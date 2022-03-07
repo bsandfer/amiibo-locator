@@ -21,6 +21,7 @@ h1 {
 h4 {
   text-shadow: 1px 3px rgb(99, 99, 99);
   margin: 0;
+  text-align: center;
 }
 
 p {
@@ -37,9 +38,8 @@ p {
 .cardContainer {
   width: 80%;
   height: 45%;
-  min-width: 600px;
-  /* position: relative;  */
-  /* right: -60px; */
+  position: relative;  
+  right: -60px;
 }
 
 .card-panel {
