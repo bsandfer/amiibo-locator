@@ -49,6 +49,11 @@ function closeSideMenu() {
 const openModalButtons = document.querySelectorAll('[data-modal-target]')
 const closeModalButtons = document.querySelectorAll('[data-close-button]')
 const overlay = document.getElementById('overlay')
+const aboutUs = document.getElementById('abtUs')
+
+aboutUs.addEventListener('click', ()=>{
+  openModal()
+})
 
 // openModalButtons.forEach(button => {
 //   button.addEventListener('click', () => {
@@ -135,4 +140,3 @@ document.getElementById('btnClick').addEventListener('click', () => {
 
   playMusic(getMusic(), 72);
 })
-
