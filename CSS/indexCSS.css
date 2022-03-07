@@ -220,3 +220,9 @@ p {
   opacity: 1;
   pointer-events: all;
 }
+
+.buttonCenter{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
