@@ -226,3 +226,7 @@ p {
   align-items: center;
   justify-content: center;
 }
+
+.input-field {
+  background-color: antiquewhite;
+}
